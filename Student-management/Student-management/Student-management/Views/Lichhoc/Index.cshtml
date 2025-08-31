@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Student_management.Models.Lichhoc>
+
+@{
+    ViewData["Title"] = "Quản lý Lịch học";
+}
+
+<h1 class="mb-3">Danh sách Lịch học</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">+ Thêm lịch học mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Lớp</th>
+            <th>Môn học</th>
+            <th>Giáo viên</th>
+            <th>Phòng học</th>
+            <th>Học kỳ</th>
+            <th>Thứ</th>
+            <th>Tiết học</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaLopNavigation.TenLop</td>
+                <td>@item.MaMonHocNavigation.TenMonHoc</td>
+                <td>@item.MaGvNavigation.HoTen</td>
+                <td>@item.MaPhongNavigation.TenPhong</td>
+                <td>@item.MaHkNavigation.TenHk</td>
+                <td>@item.ThuTrongTuan</td>
+                <td>@item.TietHoc</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaLichHoc" class="btn btn-sm btn-warning">Sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.MaLichHoc" class="btn btn-sm btn-info">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaLichHoc" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+﻿@model Student_management.Models.Hocsinh
+@{
+    ViewData["Title"] = "Thêm học sinh";
+}
+
+<h2>Thêm học sinh mới</h2>
+<hr />
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label class="form-label">Họ tên</label>
+        <input asp-for="HoTen" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ngày sinh</label>
+        <input asp-for="NgaySinh" type="date" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Giới tính</label>
+        <select asp-for="GioiTinh" class="form-select">
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Địa chỉ</label>
+        <input asp-for="DiaChi" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">SĐT</label>
+        <input asp-for="Sdt" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input asp-for="Email" class="form-control" type="email" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Lớp</label>
+        <select asp-for="MaLop" class="form-select" asp-items="ViewBag.MaLop"></select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Trạng thái</label>
+        <input asp-for="TrangThai" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">💾 Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+</form>

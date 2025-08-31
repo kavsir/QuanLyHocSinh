@@ -1,0 +1,17 @@
+﻿@model Student_management.Models.Namhoc
+
+@{
+    ViewData["Title"] = "Thêm năm học";
+}
+
+<h1>Thêm năm học mới</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="TenNamHoc" class="control-label"></label>
+        <input asp-for="TenNamHoc" class="form-control" />
+        <span asp-validation-for="TenNamHoc" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>

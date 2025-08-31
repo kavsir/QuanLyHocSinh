@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Student_management.Models.Namhoc>
+
+@{
+    ViewData["Title"] = "Danh sách Năm học";
+}
+
+<h1 class="mb-3">Danh sách Năm học</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">+ Thêm năm học mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Mã Năm học</th>
+            <th>Tên Năm học</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaNamHoc</td>
+                <td>@item.TenNamHoc</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.MaNamHoc" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-action="Edit" asp-route-id="@item.MaNamHoc" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaNamHoc" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model Student_management.Models.Hocphi
+
+@{
+    ViewData["Title"] = "Sửa Học phí";
+}
+
+<h2>Sửa Học phí</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MaHp" />
+
+    <div class="mb-3">
+        <label class="form-label">Học sinh</label>
+        <select asp-for="MaHs" class="form-control" asp-items="ViewBag.MaHs"></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Học kỳ</label>
+        <select asp-for="MaHk" class="form-control" asp-items="ViewBag.MaHk"></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số tiền (VNĐ)</label>
+        <input asp-for="SoTien" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ngày đóng</label>
+        <input asp-for="NgayDong" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Trạng thái</label>
+        <select asp-for="TrangThai" class="form-control">
+            <option value="Chưa đóng" selected="@(Model.TrangThai == "Chưa đóng")">Chưa đóng</option>
+            <option value="Đã đóng" selected="@(Model.TrangThai == "Đã đóng")">Đã đóng</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">💾 Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">↩ Quay lại</a>
+</form>

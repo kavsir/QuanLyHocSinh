@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Student_management.Models.Hocsinh>
+
+@{
+    ViewData["Title"] = "Danh sách học sinh";
+}
+
+<h2 class="mb-3">Danh sách học sinh</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">+ Thêm học sinh</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Lớp</th>
+                <th>Email</th>
+                <th>SĐT</th>
+                <th>Trạng thái</th>
+                <th style="width: 150px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.HoTen</td>
+                        <td>@item.NgaySinh.ToString("dd/MM/yyyy")</td>
+                        <td>@item.GioiTinh</td>
+                        <td>@item.MaLopNavigation?.TenLop</td>
+                        <td>@item.Email</td>
+                        <td>@item.Sdt</td>
+                        <td>@item.TrangThai</td>
+                        <td class="text-nowrap">
+                            <a asp-action="Details" asp-route-id="@item.MaHs" class="btn btn-sm btn-outline-secondary">Xem</a>
+                            <a asp-action="Edit" asp-route-id="@item.MaHs" class="btn btn-sm btn-warning">Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@item.MaHs" class="btn btn-sm btn-danger">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center text-muted">Chưa có học sinh nào</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

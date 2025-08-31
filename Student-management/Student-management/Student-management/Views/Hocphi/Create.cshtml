@@ -1,0 +1,40 @@
+﻿@model Student_management.Models.Hocphi
+
+@{
+    ViewData["Title"] = "Thêm Học phí";
+}
+
+<h2>Thêm Học phí</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label class="form-label">Học sinh</label>
+        <select asp-for="MaHs" class="form-control" asp-items="ViewBag.MaHs"></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Học kỳ</label>
+        <select asp-for="MaHk" class="form-control" asp-items="ViewBag.MaHk"></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số tiền (VNĐ)</label>
+        <input asp-for="SoTien" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ngày đóng</label>
+        <input asp-for="NgayDong" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Trạng thái</label>
+        <select asp-for="TrangThai" class="form-control">
+            <option value="Chưa đóng">Chưa đóng</option>
+            <option value="Đã đóng">Đã đóng</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">💾 Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">↩ Quay lại</a>
+</form>
