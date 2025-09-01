@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.vscode/
+
+# Build outputs
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto generated
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+*.vsidx
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# EF Core Migrations (nếu muốn bỏ qua migration cũ thì thêm dòng dưới)
+# Migrations/

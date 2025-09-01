@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Student_management.Models.Lop>
+
+@{
+    ViewData["Title"] = "Danh sách lớp";
+}
+
+<h2>Danh sách lớp</h2>
+<p>
+    <a class="btn btn-primary" asp-action="Create">➕ Thêm lớp mới</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên lớp</th>
+            <th>Sĩ số</th>
+            <th>Năm học</th>
+            <th>Giáo viên CN</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TenLop</td>
+                <td>@item.SiSo</td>
+                <td>@item.MaNamHocNavigation?.TenNamHoc</td>
+                <td>@item.MaGvcnNavigation?.HoTen</td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.MaLop">Chi tiết</a> |
+                    <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.MaLop">Sửa</a> |
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.MaLop">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

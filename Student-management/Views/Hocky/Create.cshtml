@@ -1,0 +1,47 @@
+﻿@model Student_management.Models.Hocky
+
+@{
+    ViewData["Title"] = "Create Học kỳ";
+}
+
+<h1>Create Học kỳ</h1>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="TenHk"></label>
+        <input asp-for="TenHk" class="form-control" />
+        <span asp-validation-for="TenHk" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgayBatDau"></label>
+        <input asp-for="NgayBatDau" type="date" class="form-control" />
+        <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgayKetThuc"></label>
+        <input asp-for="NgayKetThuc" type="date" class="form-control" />
+        <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MaNamHoc">Năm học</label>
+        <select asp-for="MaNamHoc" class="form-control"
+                asp-items="@(new SelectList(ViewBag.NamHocs, "MaNamHoc", "TenNamHoc"))">
+            <option value="">-- Chọn năm học --</option>
+        </select>
+        <span asp-validation-for="MaNamHoc" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
