@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Student_management.Models.Diem>
+@{
+    ViewData["Title"] = "Quản lý điểm";
+}
+
+<h2>Danh sách điểm</h2>
+<p>
+    <a class="btn btn-success" asp-action="Create">➕ Thêm điểm mới</a>
+</p>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Học sinh</th>
+            <th>Môn học</th>
+            <th>Học kỳ</th>
+            <th>Miệng</th>
+            <th>15 phút</th>
+            <th>1 tiết</th>
+            <th>Thi</th>
+            <th>Tùy chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaHsNavigation.HoTen</td>
+                <td>@item.MaMonHocNavigation.TenMonHoc</td>
+                <td>@item.MaHkNavigation.TenHk</td>
+                <td>@item.DiemMieng</td>
+                <td>@item.Diem15p</td>
+                <td>@item.Diem1Tiet</td>
+                <td>@item.DiemThi</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.MaDiem">Sửa</a> |
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.MaDiem">Chi tiết</a> |
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.MaDiem">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

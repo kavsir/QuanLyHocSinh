@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Student_management.Models.Lichhoc>
+
+@{
+    ViewData["Title"] = "Thời khóa biểu";
+    string[] thuTrongTuan = { "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7" };
+    int soTiet = 10; // giả sử 10 tiết 1 ngày
+}
+
+<h2>Thời khóa biểu - @ViewBag.TenLop</h2>
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th>Tiết / Thứ</th>
+            @foreach (var thu in thuTrongTuan)
+            {
+                <th>@thu</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for (int tiet = 1; tiet <= soTiet; tiet++)
+        {
+            <tr>
+                <td><b>Tiết @tiet</b></td>
+                @foreach (var thu in thuTrongTuan)
+                {
+                    var mon = Model.FirstOrDefault(l => l.ThuTrongTuan == thu && l.TietHoc == tiet);
+                    if (mon != null)
+                    {
+                        <td>
+                            <b>@mon.MaMonHocNavigation?.TenMonHoc</b><br />
+                            GV: @mon.MaGvNavigation?.HoTen <br />
+                            Phòng: @mon.MaPhongNavigation?.TenPhong
+                        </td>
+                    }
+                    else
+                    {
+                        <td>-</td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>

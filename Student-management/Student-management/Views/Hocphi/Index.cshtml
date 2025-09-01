@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Student_management.Models.Hocphi>
+
+@{
+    ViewData["Title"] = "Quản lý Học phí";
+}
+
+<h2 class="mb-3">Danh sách Học phí</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">➕ Thêm Học phí</a>
+</p>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Mã HP</th>
+            <th>Học sinh</th>
+            <th>Học kỳ</th>
+            <th>Số tiền (VNĐ)</th>
+            <th>Ngày đóng</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaHp</td>
+                <td>@item.MaHsNavigation.HoTen</td>
+                <td>@item.MaHkNavigation.TenHk</td>
+                <td>@String.Format("{0:N0}", item.SoTien)</td>
+                <td>@item.NgayDong.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @if (item.TrangThai == "Đã đóng")
+                    {
+                        <span class="badge bg-success">Đã đóng</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Chưa đóng</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.MaHp" class="btn btn-info btn-sm">Chi tiết</a> |
+                    <a asp-action="Edit" asp-route-id="@item.MaHp" class="btn btn-warning btn-sm">Sửa</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaHp" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

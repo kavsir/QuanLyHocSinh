@@ -1,0 +1,36 @@
+﻿@model Student_management.Models.Lop
+
+@{
+    ViewData["Title"] = "Sửa thông tin lớp";
+}
+
+<h2>Sửa thông tin lớp</h2>
+<hr />
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="MaLop" />
+
+    <div class="mb-3">
+        <label class="form-label">Tên lớp</label>
+        <input asp-for="TenLop" class="form-control" />
+        <span asp-validation-for="TenLop" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Sĩ số</label>
+        <input asp-for="SiSo" class="form-control" type="number" />
+        <span asp-validation-for="SiSo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Năm học</label>
+        <select asp-for="MaNamHoc" class="form-select" asp-items="ViewBag.MaNamHoc"></select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Giáo viên chủ nhiệm</label>
+        <select asp-for="MaGvcn" class="form-select" asp-items="ViewBag.MaGvcn">
+            <option value="">-- Chưa chọn --</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">💾 Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+</form>

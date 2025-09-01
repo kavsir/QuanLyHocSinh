@@ -1,0 +1,1551 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CongNghePhanMen\\Student-management\\Student-management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\diemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\diemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\diem\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\diem\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\diem\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\diem\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\hocphicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\hocphicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\diem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\diem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\lichhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\lichhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lichhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lichhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lichhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lichhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\lichhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\lichhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lichhoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lichhoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\taikhoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\taikhoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\hocky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\hocky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\hocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\hocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\hocsinhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\hocsinhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocsinh\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocsinh\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phonghoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phonghoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phonghoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phonghoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\phonghoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\phonghoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\thoikhoabieu\\xemtkb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\thoikhoabieu\\xemtkb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\thoikhoabieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\thoikhoabieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\thoikhoabieu\\chonlop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\thoikhoabieu\\chonlop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\thoikhoabieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\thoikhoabieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\namhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\namhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\namhoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\namhoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\namhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\namhoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\namhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\namhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\namhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\namhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\monhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\monhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\monhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\monhoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\namhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\namhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\monhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\monhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocphi\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocphi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocphi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocphi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocphi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\hocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\hocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lichhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lichhoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lichhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lichhoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\quanlyhocsinhcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\quanlyhocsinhcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\giaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\giaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phonghoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phonghoc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phonghoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phonghoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phonghoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phonghoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\phanconggiangday\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\phanconggiangday\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\phanconggiangdaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\phanconggiangdaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\phanconggiangday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\phanconggiangday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\diem\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\diem\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\diem\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\diem\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocky\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocky\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\diem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\diem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\taikhoan\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\taikhoan\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocsinh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocsinh\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocsinh\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lop\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lop\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lop\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lop\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lop\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lop\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\lop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\lop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\lopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\lopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\lop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\lop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\giaovien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\giaovien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\giaovien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\giaovien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocky\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocky\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\monhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\monhoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\hockycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\hockycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocky\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocky\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocky\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocky\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\hocky\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocky\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\namhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\namhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\student-management\\student-management\\student-management\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Taikhoan\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Taikhoan\\Create.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:04:17.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lichhoc\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lichhoc\\Create.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:33:10.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LichhocController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\LichhocController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\LichhocController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\LichhocController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\LichhocController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAuwE4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T13:25:29.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Diem\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Diem\\Create.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:11:16.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiemController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\DiemController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\DiemController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\DiemController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\DiemController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T13:08:57.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Diem\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Diem\\Edit.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:11:23.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Diem\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Diem\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:10:08.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HocphiController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HocphiController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\HocphiController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HocphiController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\HocphiController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwv4oAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T13:40:13.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lichhoc\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lichhoc\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:33:49.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Lichhoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Lichhoc.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Lichhoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Lichhoc.cs",
+              "RelativeToolTip": "Student-management\\Models\\Lichhoc.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:36.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lichhoc\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lichhoc\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:34:04.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Hocsinh.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocsinh.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Hocsinh.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocsinh.cs",
+              "RelativeToolTip": "Student-management\\Models\\Hocsinh.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:32.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Taikhoan.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Taikhoan.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Taikhoan.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Taikhoan.cs",
+              "RelativeToolTip": "Student-management\\Models\\Taikhoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:11:03.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Taikhoan\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Taikhoan\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:04:41.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GiaovienController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\GiaovienController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\GiaovienController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\GiaovienController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\GiaovienController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:32:53.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Hocky.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocky.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Hocky.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocky.cs",
+              "RelativeToolTip": "Student-management\\Models\\Hocky.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA3wAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:01:50.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TaikhoanController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\TaikhoanController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\TaikhoanController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\TaikhoanController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\TaikhoanController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T13:02:38.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HocsinhController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HocsinhController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\HocsinhController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HocsinhController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\HocsinhController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T11:18:57.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:19:45.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:20:38.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Phonghoc\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Phonghoc\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:23:33.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Phonghoc\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Phonghoc\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:23:19.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PhonghocController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\PhonghocController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\PhonghocController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\PhonghocController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\PhonghocController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:20:59.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T07:34:25.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "XemTKB.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\XemTKB.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\ThoiKhoaBieu\\XemTKB.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\XemTKB.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\ThoiKhoaBieu\\XemTKB.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T17:39:12.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ThoiKhoaBieuController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\ThoiKhoaBieuController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\ThoiKhoaBieuController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\ThoiKhoaBieuController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\ThoiKhoaBieuController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAiwEIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T17:28:04.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChonLop.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\ChonLop.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\ThoiKhoaBieu\\ChonLop.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\ChonLop.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\ThoiKhoaBieu\\ChonLop.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T17:38:27.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\ThoiKhoaBieu\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\ThoiKhoaBieu\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\ThoiKhoaBieu\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T17:29:46.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:37:14.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:56:06.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T15:55:46.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:36:14.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T08:02:02.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Namhoc\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Namhoc\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:59:24.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Namhoc\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Namhoc\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:59:07.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Namhoc\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Namhoc\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:58:46.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Namhoc\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Namhoc\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T13:51:53.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Namhoc\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Namhoc\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Namhoc\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:52:25.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Monhoc\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Monhoc\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:30:41.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T10:30:40.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Monhoc\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Monhoc\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:30:39.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "NamhocController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\NamhocController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\NamhocController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\NamhocController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\NamhocController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAA0wGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T07:50:28.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Monhoc\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Monhoc\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Monhoc\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:27:53.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Delete.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:25:17.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Details.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:25:09.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Edit.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:24:35.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Create.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:24:28.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocphi\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T15:24:16.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lichhoc\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lichhoc\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:33:46.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lichhoc\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lichhoc\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lichhoc\\Index.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:33:01.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Hocphi.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocphi.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Hocphi.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Hocphi.cs",
+              "RelativeToolTip": "Student-management\\Models\\Hocphi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:29.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Phonghoc\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Phonghoc\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:25:40.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Phonghoc\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Phonghoc\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:25:47.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Giaovien.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Giaovien.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Giaovien.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Giaovien.cs",
+              "RelativeToolTip": "Student-management\\Models\\Giaovien.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:17.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "QuanLyHocSinhContext.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\QuanLyHocSinhContext.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\QuanLyHocSinhContext.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\QuanLyHocSinhContext.cs",
+              "RelativeToolTip": "Student-management\\Models\\QuanLyHocSinhContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:55:14.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Phonghoc\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Phonghoc\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Phonghoc\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:26:32.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\PhancongGiangday\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\PhancongGiangday\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\PhancongGiangday\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\PhancongGiangday\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:22:44.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "PhancongGiangdayController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\PhancongGiangdayController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\PhancongGiangdayController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\PhancongGiangdayController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\PhancongGiangdayController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T13:17:22.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Diem\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Diem\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:12:22.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Diem\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Diem\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Diem\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:12:28.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Monhoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Monhoc.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Monhoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Monhoc.cs",
+              "RelativeToolTip": "Student-management\\Models\\Monhoc.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:43.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PhancongGiangday.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\PhancongGiangday.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\PhancongGiangday.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\PhancongGiangday.cs",
+              "RelativeToolTip": "Student-management\\Models\\PhancongGiangday.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T04:52:36.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Taikhoan\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Taikhoan\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:04:34.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Taikhoan\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Taikhoan\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:04:24.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Taikhoan\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Taikhoan\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Taikhoan\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T13:03:27.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocky\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocky\\Delete.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T13:27:23.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:22:52.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:20:52.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Diem.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Diem.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Diem.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Diem.cs",
+              "RelativeToolTip": "Student-management\\Models\\Diem.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:07:17.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocsinh\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:20:45.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lop\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lop\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:15:46.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lop\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lop\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:15:34.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lop\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lop\\Edit.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:15:27.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lop\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lop\\Create.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:15:18.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Lop\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Lop\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Lop\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-31T11:14:51.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "LopController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\LopController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\LopController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\LopController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\LopController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:42:39.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:37:30.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Create.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:37:11.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Edit.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:37:30.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Lop.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Lop.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Lop.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Lop.cs",
+              "RelativeToolTip": "Student-management\\Models\\Lop.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:40.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Delete.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Delete.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Delete.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:38:30.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Giaovien\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:38:46.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocky\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocky\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T13:23:37.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Phonghoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Phonghoc.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Phonghoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Phonghoc.cs",
+              "RelativeToolTip": "Student-management\\Models\\Phonghoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:57.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "MonhocController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\MonhocController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\MonhocController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\MonhocController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\MonhocController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:46:18.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "HockyController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HockyController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\HockyController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HockyController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\HockyController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T10:17:08.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Details.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocky\\Details.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Details.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocky\\Details.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T13:25:13.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocky\\Edit.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Edit.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocky\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T10:25:55.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Create.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocky\\Create.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\Hocky\\Create.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocky\\Create.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T10:21:28.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:59:27.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Namhoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Namhoc.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Namhoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\Namhoc.cs",
+              "RelativeToolTip": "Student-management\\Models\\Namhoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:47.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T08:03:27.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Program.cs",
+              "RelativeDocumentMoniker": "Student-management\\Program.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Program.cs",
+              "RelativeToolTip": "Student-management\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T04:52:23.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\appsettings.json",
+              "RelativeDocumentMoniker": "Student-management\\appsettings.json",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\appsettings.json",
+              "RelativeToolTip": "Student-management\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-27T04:49:59.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\Student-management\\Student-management\\Student-management\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Student-management\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:10:16.315Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
