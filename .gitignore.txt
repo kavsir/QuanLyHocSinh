@@ -1,0 +1,9 @@
+PS D:\TaiLieuNam3\HocKy1\CongNghePhanMen\QuanLyHocSinh\Student-management> git pull origin main
+remote: Enumerating objects: 653, done.
+remote: Total 653 (delta 0), reused 0 (delta 0), pack-reused 653 (from 1)
+Receiving objects: 100% (653/653), 22.90 MiB | 1.92 MiB/s, done.
+Resolving deltas: 100% (263/263), done.
+From https://github.com/kavsir/QuanLyHocSinh
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
