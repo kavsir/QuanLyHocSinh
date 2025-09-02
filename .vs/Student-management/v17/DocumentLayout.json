@@ -1,46 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\",
+  "WorkspaceRootPath": "D:\\CongNghePhanMen\\QuanLyHocSinh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\controllers\\adminsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\adminsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\hocky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\hocky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\diem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\diem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\hocsinh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocsinh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\hocphi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\hocphi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\controllers\\adminsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\adminsearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\models\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\models\\hocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\hocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\hocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\models\\phanconggiangday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\models\\phanconggiangday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\models\\phanconggiangday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\views\\shared\\_layoutgiaovien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\congnghephanmen\\quanlyhocsinh\\student-management\\views\\shared\\_layoutgiaovien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\shared\\_layoutgiaovien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|d:\\tailieunam3\\hocky1\\congnghephanmen\\quanlyhocsinh\\student-management\\student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8CB7DA8-1E39-484D-8653-9D51AC842B47}|Student-management\\Student-management.csproj|solutionrelative:student-management\\views\\giaovien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,15 +82,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Hocky.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Hocky.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Hocky.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Hocky.cs",
+              "RelativeToolTip": "Student-management\\Models\\Hocky.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:35:30.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Student-management\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:35:30.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Diem.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Diem.cs",
+              "RelativeDocumentMoniker": "Student-management\\Models\\Diem.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Diem.cs",
+              "RelativeToolTip": "Student-management\\Models\\Diem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:35:28.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocsinh\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:29:24.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Hocphi\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Hocphi\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Hocphi\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Hocphi\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:28:56.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\appsettings.json",
+              "RelativeDocumentMoniker": "Student-management\\appsettings.json",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\appsettings.json",
+              "RelativeToolTip": "Student-management\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-02T12:27:35.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:26:50.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "DashboardController.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Controllers\\DashboardController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Student-management\\Controllers\\DashboardController.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Student-management\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAqwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -66,11 +185,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Monhoc.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Monhoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Monhoc.cs",
               "RelativeDocumentMoniker": "Student-management\\Models\\Monhoc.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Monhoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Monhoc.cs",
               "RelativeToolTip": "Student-management\\Models\\Monhoc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -78,11 +197,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Hocphi.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Hocphi.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Hocphi.cs",
               "RelativeDocumentMoniker": "Student-management\\Models\\Hocphi.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Hocphi.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Hocphi.cs",
               "RelativeToolTip": "Student-management\\Models\\Hocphi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,23 +209,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeToolTip": "Student-management\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAwGkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T18:23:33.815Z"
+              "WhenOpened": "2025-09-01T18:23:33.815Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Dashboard\\Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Student-management\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Student-management\\Views\\Dashboard\\Index.cshtml",
               "ViewState": "AgIAADUAAAAAAAAAAAAAwE8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -114,24 +234,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "AdminSearchController.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Controllers\\AdminSearchController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\AdminSearchController.cs",
               "RelativeDocumentMoniker": "Student-management\\Controllers\\AdminSearchController.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Controllers\\AdminSearchController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\AdminSearchController.cs",
               "RelativeToolTip": "Student-management\\Controllers\\AdminSearchController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAowG0AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwCwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T18:22:08.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T18:22:08.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Phonghoc.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Phonghoc.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Phonghoc.cs",
               "RelativeDocumentMoniker": "Student-management\\Models\\Phonghoc.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\Phonghoc.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\Phonghoc.cs",
               "RelativeToolTip": "Student-management\\Models\\Phonghoc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,11 +258,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Giaovien\\Index.cshtml",
+              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Index.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Giaovien\\Index.cshtml",
+              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T17:46:08.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SearchController.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\SearchController.cs",
+              "RelativeDocumentMoniker": "Student-management\\Controllers\\SearchController.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Controllers\\SearchController.cs",
+              "RelativeToolTip": "Student-management\\Controllers\\SearchController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T04:27:21.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "PhancongGiangday.cs",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\PhancongGiangday.cs",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\PhancongGiangday.cs",
               "RelativeDocumentMoniker": "Student-management\\Models\\PhancongGiangday.cs",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Models\\PhancongGiangday.cs",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Models\\PhancongGiangday.cs",
               "RelativeToolTip": "Student-management\\Models\\PhancongGiangday.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,27 +294,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "_LayoutGiaoVien.cshtml",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
+              "DocumentMoniker": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
               "RelativeDocumentMoniker": "Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
+              "ToolTip": "D:\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
               "RelativeToolTip": "Student-management\\Views\\Shared\\_LayoutGiaoVien.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-01T17:47:05.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Giaovien\\Index.cshtml",
-              "RelativeDocumentMoniker": "Student-management\\Views\\Giaovien\\Index.cshtml",
-              "ToolTip": "D:\\TaiLieuNam3\\HocKy1\\CongNghePhanMen\\QuanLyHocSinh\\Student-management\\Student-management\\Views\\Giaovien\\Index.cshtml",
-              "RelativeToolTip": "Student-management\\Views\\Giaovien\\Index.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAIwDwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T17:46:08.29Z"
             }
           ]
         }

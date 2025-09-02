@@ -1,21 +1,5 @@
 ﻿@model IEnumerable<Student_management.Models.Hocsinh>
 
-@{
-    ViewData["Title"] = "Danh sách Học sinh";
-    var userRole = Context.Session.GetString("UserRole");
-    if (userRole == "Admin")
-    {
-        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
-    }
-    else if (userRole == "GiaoVien")
-    {
-        Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
-    }
-    else
-    {
-        Layout = "~/Views/Shared/_LayoutHocSinh.cshtml";
-    }
-}
 
 <h1>Danh sách học sinh</h1>
 
