@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Xóa thất bại";
+    var entityName = ViewBag.EntityName ?? "Bản ghi";
+    var id = ViewBag.Id ?? "(không rõ)";
+}
+
+<h2 class="text-danger">Không thể xóa</h2>
+
+<p>
+    @entityName có <strong>ID = @id</strong> không thể xóa vì đang
+    có dữ liệu ở bảng khác.
+</p>
+
+<a asp-action="Index" asp-controller="@ViewBag.Controller" class="btn btn-primary">Quay lại danh sách</a>
