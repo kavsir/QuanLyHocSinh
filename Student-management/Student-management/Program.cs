@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Student_management.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuanLyHocSinhContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .EnableSensitiveDataLogging()   // log chi tiết dữ liệu
+           .LogTo(Console.WriteLine, LogLevel.Information)); // log query ra console
 
 builder.Services.AddDistributedMemoryCache();
 
@@ -22,10 +24,12 @@ builder.Services.AddSession(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login";
-        options.LogoutPath = "/Account/Logout";
-        options.AccessDeniedPath = "/Account/AccessDenied";
+        options.LoginPath = "/Account/Login"; // Đường dẫn đến trang đăng nhập
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Thời gian "thẻ an ninh" có hiệu lực
+        options.AccessDeniedPath = "/Home/AccessDenied"; // Trang hiển thị khi không có quyền
     });
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,6 +42,7 @@ app.UseStaticFiles();
 app.UseSession();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

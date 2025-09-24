@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Student_management.Models.Lop>
+@{
+    ViewData["Title"] = "Quản lý Lớp học";
+}
+
+<div class="card shadow-sm">
+    <div class="card-header bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0"><i class="fas fa-school me-2"></i>@ViewData["Title"]</h5>
+            <a asp-action="Create" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle me-2"></i>Thêm Lớp mới</a>
+        </div>
+    </div>
+    <div class="card-body">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+
+        <form asp-action="Index" method="get" class="mb-4">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-5"><label class="form-label">Tìm theo tên lớp</label><input type="text" name="searchString" class="form-control" value="@ViewData["CurrentSearch"]" /></div>
+                <div class="col-md-3"><label class="form-label">Lọc theo Năm học</label><select name="namHocFilter" class="form-select" asp-items="@(ViewBag.NamHocList as SelectList)"><option value="">-- Tất cả --</option></select></div>
+                <div class="col-md-3"><label class="form-label">Lọc theo GVCN</label><select name="gvcnFilter" class="form-select" asp-items="@(ViewBag.GvcnList as SelectList)"><option value="">-- Tất cả --</option></select></div>
+                <div class="col-md-1"><div class="d-grid"><button type="submit" class="btn btn-primary"><i class="fas fa-filter"></i></button></div></div>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr><th>Tên Lớp</th><th class="text-center">Sĩ số</th><th>Năm học</th><th>GV Chủ nhiệm</th><th class="text-center" style="width: 15%;">Hành động</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><strong>@item.TenLop</strong></td>
+                            <td class="text-center">@item.SiSo</td>
+                            <td>@item.MaNamHocNavigation?.TenNamHoc</td>
+                            <td>@item.MaGvcnNavigation?.HoTen</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.MaLop" class="btn btn-sm btn-warning" title="Sửa"><i class="fas fa-edit"></i></a>
+                                <a asp-action="Details" asp-route-id="@item.MaLop" class="btn btn-sm btn-info" title="Chi tiết"><i class="fas fa-info-circle"></i></a>
+                                <a asp-action="Delete" asp-route-id="@item.MaLop" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

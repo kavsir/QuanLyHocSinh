@@ -1,0 +1,142 @@
+﻿@model Student_management.Models.Giaovien
+
+@{
+    ViewData["Title"] = "Chi tiết Giáo viên";
+}
+
+<h1 class="mb-4">@ViewData["Title"]: @Model.HoTen</h1>
+
+<div class="row">
+    <div class="col-lg-5">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i>Thông tin cá nhân</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4">Họ và Tên</dt>
+                    <dd class="col-sm-8">@Model.HoTen</dd>
+
+                    <dt class="col-sm-4">Ngày Sinh</dt>
+                    <dd class="col-sm-8">@Model.NgaySinh?.ToString("dd/MM/yyyy")</dd>
+
+                    <dt class="col-sm-4">Giới Tính</dt>
+                    <dd class="col-sm-8">@Model.GioiTinh</dd>
+
+                    <dt class="col-sm-4">Email</dt>
+                    <dd class="col-sm-8">@Model.Email</dd>
+
+                    <dt class="col-sm-4">Số Điện Thoại</dt>
+                    <dd class="col-sm-8">@Model.Sdt</dd>
+
+                    <dt class="col-sm-4">Địa Chỉ</dt>
+                    <dd class="col-sm-8">@Model.DiaChi</dd>
+
+                    <dt class="col-sm-4">Chuyên Môn</dt>
+                    <dd class="col-sm-8">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-school me-2"></i>Lớp đang chủ nhiệm</h5>
+            </div>
+            <div class="list-group list-group-flush">
+                @if (Model.Lops.Any())
+                {
+                    @foreach (var lop in Model.Lops)
+                    {
+                        <a asp-controller="Lops" asp-action="Details" asp-route-id="@lop.MaLop" class="list-group-item list-group-item-action">
+                            Lớp @lop.TenLop (@lop.MaNamHocNavigation?.TenNamHoc)
+                        </a>
+                    }
+                }
+                else
+                {
+                    <div class="list-group-item">Không chủ nhiệm lớp nào.</div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Phân công Giảng dạy</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Học kỳ</th>
+                            <th>Lớp</th>
+                            <th>Môn học</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var pc in Model.PhancongGiangdays.OrderBy(p => p.MaHkNavigation.NgayBatDau))
+                        {
+                            <tr>
+                                <td>@pc.MaHkNavigation?.TenHk</td>
+                                <td>@pc.MaLopNavigation?.TenLop</td>
+                                <td>@pc.MaMonHocNavigation?.TenMonHoc</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header">
+        <h5 class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Thời khóa biểu (Học kỳ hiện tại)</h5>
+    </div>
+    <div class="card-body table-responsive">
+        @{
+            var currentSemesterSchedules = Model.Lichhocs.Where(l => l.MaHkNavigation != null && l.MaHkNavigation.NgayBatDau <= DateTime.Now && l.MaHkNavigation.NgayKetThuc >= DateTime.Now);
+            var daysOfWeek = new List<string> { "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" };
+            var tietHocMax = currentSemesterSchedules.Any() ? currentSemesterSchedules.Max(l => l.TietHoc) ?? 5 : 5;
+            var scheduleLookup = currentSemesterSchedules.ToLookup(l => l.ThuTrongTuan);
+        }
+        <table class="table table-bordered text-center small">
+            <thead class="table-light">
+                <tr>
+                    <th>Tiết</th>
+                    @foreach (var day in daysOfWeek)
+                    {
+                        <th>@day</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @for (int t = 1; t <= tietHocMax; t++)
+                {
+                    <tr>
+                        <td class="fw-bold">@t</td>
+                        @foreach (var day in daysOfWeek)
+                        {
+                            <td>
+                                @{
+                                    var lich = scheduleLookup[day].FirstOrDefault(l => l.TietHoc == t);
+                                }
+                                @if (lich != null)
+                                {
+                                    <div><strong>@lich.MaMonHocNavigation?.TenMonHoc</strong></div>
+                                    <div class="text-muted">Lớp: @lich.MaLopNavigation?.TenLop</div>
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaGv" class="btn btn-warning"><i class="fas fa-edit me-2"></i>Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

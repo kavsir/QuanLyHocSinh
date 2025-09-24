@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Lỗi Thông tin";
+}
+
+<div class="text-center mt-5">
+    <div class="alert alert-warning">
+        <h1 class="display-4"><i class="fas fa-info-circle"></i></h1>
+        <h2 class="fw-bold">Không thể tải dữ liệu</h2>
+        <p class="lead">
+            @ViewData["ErrorMessage"]
+        </p>
+    </div>
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-primary mt-3">
+        <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+    </a>
+</div>

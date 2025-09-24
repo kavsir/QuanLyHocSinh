@@ -1,0 +1,103 @@
+﻿@model Student_management.Models.AttendanceViewModel
+
+@{
+    ViewData["Title"] = "Điểm danh lớp " + Model.TenLop;
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<form asp-action="TakeAttendance" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="LopId" />
+    <input type="hidden" asp-for="TenLop" />
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body bg-light">
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="NgayDiemDanh" class="form-label fw-bold">Ngày điểm danh</label>
+                    <input asp-for="NgayDiemDanh" type="date" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="TietHoc" class="form-label fw-bold">Tiết học</label>
+                    <input asp-for="TietHoc" type="number" min="1" max="10" class="form-control" />
+                </div>
+                <div class="col-md-5 d-flex align-items-end justify-content-end gap-2">
+                    <button type="button" id="markAllPresent" class="btn btn-success btn-sm">
+                        Chọn tất cả "Có mặt"
+                    </button>
+                    <button type="button" id="markAllAbsent" class="btn btn-danger btn-sm">
+                        Chọn tất cả "Vắng KP"
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width:5%">STT</th>
+                    <th style="width:25%">Họ và tên</th>
+                    <th class="text-center" style="width:10%">Có mặt</th>
+                    <th class="text-center" style="width:15%">Vắng có phép</th>
+                    <th class="text-center" style="width:15%">Vắng không phép</th>
+                    <th class="text-center" style="width:10%">Đi muộn</th>
+                    <th style="width:20%">Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.AttendanceList.Count; i++)
+                {
+                    <tr>
+                        <td class="text-center">@(i + 1)</td>
+                        <td>
+                            @Model.AttendanceList[i].HoTenHs
+                            <input type="hidden" asp-for="AttendanceList[i].MaHs" />
+                            <input type="hidden" asp-for="AttendanceList[i].HoTenHs" />
+                        </td>
+                        <td class="text-center">
+                            <input type="radio" asp-for="AttendanceList[i].TrangThai" value="Có mặt" />
+                        </td>
+                        <td class="text-center">
+                            <input type="radio" asp-for="AttendanceList[i].TrangThai" value="Vắng có phép" />
+                        </td>
+                        <td class="text-center">
+                            <input type="radio" asp-for="AttendanceList[i].TrangThai" value="Vắng không phép" />
+                        </td>
+                        <td class="text-center">
+                            <input type="radio" asp-for="AttendanceList[i].TrangThai" value="Đi muộn" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" asp-for="AttendanceList[i].GhiChu" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-3 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save me-1"></i> Lưu điểm danh
+        </button>
+        <a asp-controller="Diemdanhs" asp-action="Index" asp-route-lopId="@Model.LopId" class="btn btn-secondary">
+            Xem lịch sử điểm danh
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('#markAllPresent').click(function () {
+                $('input[type=radio][value="Có mặt"]').prop('checked', true);
+            });
+            $('#markAllAbsent').click(function () {
+                $('input[type=radio][value="Vắng không phép"]').prop('checked', true);
+            });
+        });
+    </script>
+}

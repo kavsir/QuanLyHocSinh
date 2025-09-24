@@ -1,0 +1,47 @@
+﻿@model Student_management.Models.Hocphi
+
+@{
+    ViewData["Title"] = "Chi tiết Phiếu thu";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h4>Phiếu thu cho: @Model.MaHsNavigation?.HoTen</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaHs)</dt>
+            <dd class="col-sm-9">@Model.MaHsNavigation?.HoTen</dd>
+
+            <dt class="col-sm-3">Lớp</dt>
+            <dd class="col-sm-9">@Model.MaHsNavigation?.MaLopNavigation?.TenLop</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaHk)</dt>
+            <dd class="col-sm-9">@Model.MaHkNavigation?.TenHk</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.SoTien)</dt>
+            <dd class="col-sm-9">@Model.SoTien?.ToString("N0") VNĐ</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.NgayDong)</dt>
+            <dd class="col-sm-9">@Model.NgayDong?.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.TrangThai)</dt>
+            <dd class="col-sm-9">
+                @if (Model.TrangThai == "Đã đóng")
+                {
+                    <span class="badge bg-success">@Model.TrangThai</span>
+                }
+                else
+                {
+
+                    <span class="badge bg-danger">@Model.TrangThai</span>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaHp" class="btn btn-primary">Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

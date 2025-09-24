@@ -1,0 +1,101 @@
+﻿@model Student_management.Models.Hocsinh
+
+@{
+    ViewData["Title"] = "Chi tiết Học sinh";
+}
+
+<h1 class="mb-4">@ViewData["Title"]: @Model.HoTen</h1>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header">
+        <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i>Thông tin cá nhân</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Họ và Tên</dt>
+            <dd class="col-sm-9">@Model.HoTen</dd>
+
+            <dt class="col-sm-3">Ngày Sinh</dt>
+            <dd class="col-sm-9">@Model.NgaySinh?.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-3">Lớp</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.TenLop</dd>
+
+            <dt class="col-sm-3">Năm học</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.MaNamHocNavigation?.TenNamHoc</dd>
+
+            <dt class="col-sm-3">GVCN</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.MaGvcnNavigation?.HoTen</dd>
+
+            <dt class="col-sm-3">Trạng thái</dt>
+            <dd class="col-sm-9">
+                @if (Model.TrangThai == "Đang học")
+                {
+                    <span class="badge bg-success">@Model.TrangThai</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">@Model.TrangThai</span>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="grades-tab" data-bs-toggle="tab" data-bs-target="#grades" type="button" role="tab">Bảng điểm</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tuition-tab" data-bs-toggle="tab" data-bs-target="#tuition" type="button" role="tab">Học phí</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="grades" role="tabpanel">
+        <div class="card card-body border-top-0 table-responsive">
+            <table class="table table-bordered table-sm">
+                <thead class="table-light"><tr><th>Học kỳ</th><th>Môn học</th><th>Miệng</th><th>15p</th><th>1 Tiết</th><th>Thi</th><th>TBM</th></tr></thead>
+                <tbody>
+                    @foreach (var grade in Model.Diems.OrderBy(d => d.MaHk))
+                    {
+                        <tr><td>@grade.MaHkNavigation?.TenHk</td><td>@grade.MaMonHocNavigation?.TenMonHoc</td><td>@grade.DiemMieng</td><td>@grade.Diem15p</td><td>@grade.Diem1Tiet</td><td>@grade.DiemThi</td><td>...</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="tuition" role="tabpanel">
+        <div class="card card-body border-top-0 table-responsive">
+            <table class="table table-sm">
+                <thead><tr><th>Nội dung</th><th class="text-end">Số tiền</th><th class="text-center">Ngày đóng</th><th class="text-center">Trạng thái</th></tr></thead>
+                <tbody>
+                    @foreach (var fee in Model.Hocphis.OrderBy(f => f.MaHkNavigation.NgayBatDau))
+                    {
+                        <tr>
+                            <td>Học phí @fee.MaHkNavigation?.TenHk</td>
+                            <td class="text-end">@fee.SoTien?.ToString("N0") VNĐ</td>
+                            <td class="text-center">@fee.NgayDong?.ToString("dd/MM/yyyy")</td>
+                            <td class="text-center">
+                                @if (fee.TrangThai == "Đã đóng")
+                                {
+                                    <span class="badge bg-success">@fee.TrangThai</span>
+                                }
+                                else
+                                {
+
+                                    <span class="badge bg-danger">@fee.TrangThai</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaHs" class="btn btn-warning"><i class="fas fa-edit me-2"></i>Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

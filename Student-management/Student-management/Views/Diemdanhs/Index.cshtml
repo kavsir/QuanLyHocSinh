@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Student_management.Models.Diemdanh>
+
+@{
+    ViewData["Title"] = "Danh sách điểm danh";
+    var tenLop = ViewBag.TenLop as string ?? "";
+    var lopId = ViewBag.LopId as int? ?? 0;
+    var searchString = ViewBag.SearchString as string ?? "";
+    var ngay = ViewBag.Ngay as string ?? "";
+    var trangThai = ViewBag.TrangThai as string ?? "";
+
+    // Danh sách trạng thái — render bằng loop để tránh viết C# trong attribute của <option>
+    var statusOptions = new List<string> { "Có mặt", "Vắng có phép", "Vắng không phép", "Đi muộn" };
+}
+
+<h2 class="mb-4 text-primary">Danh sách điểm danh - Lớp @tenLop</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle me-2"></i>@TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form asp-action="Index" method="get" class="card shadow-sm mb-4 p-3 bg-light">
+    <input type="hidden" name="lopId" value="@lopId" />
+    <div class="row g-3 align-items-end">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Tên học sinh</label>
+            <input type="text" name="searchString" value="@searchString" class="form-control" placeholder="Nhập tên học sinh..." />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Ngày</label>
+            <input type="date" name="ngay" value="@ngay" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Trạng thái</label>
+            <select name="trangThai" class="form-select">
+                <option value="">-- Tất cả --</option>
+                @foreach (var opt in statusOptions)
+                {
+                    if (opt == trangThai)
+                    {
+                        <option value="@opt" selected>@opt</option>
+                    }
+                    else
+                    {
+                        <option value="@opt">@opt</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="col-md-2 d-grid">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search me-1"></i> Tìm kiếm
+            </button>
+        </div>
+    </div>
+</form>
+
+<div class="mb-3">
+    <a asp-action="TakeAttendance" asp-route-lopId="@lopId" class="btn btn-success">
+        <i class="fas fa-plus-circle me-1"></i> Thêm điểm danh mới
+    </a>
+</div>
+
+<div class="table-responsive shadow-sm rounded">
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark text-center">
+            <tr>
+                <th style="width:120px">Ngày</th>
+                <th style="width:80px">Tiết</th>
+                <th>Học sinh</th>
+                <th style="width:150px">Trạng thái</th>
+                <th>Ghi chú</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    // Safe access + default hiển thị
+                    var hocSinhTen = item.MaHsNavigation?.HoTen ?? "—";
+                    var ghiChu = item.GhiChu ?? "";
+
+                    // badge class theo trạng thái (an toàn nếu TrangThai là null)
+                    var tt = item.TrangThai ?? "";
+                    var badgeClass = "bg-secondary";
+                    if (tt == "Có mặt") badgeClass = "bg-success";
+                    else if (tt == "Vắng có phép") badgeClass = "bg-warning text-dark";
+                    else if (tt == "Vắng không phép") badgeClass = "bg-danger";
+                    else if (tt == "Đi muộn") badgeClass = "bg-info text-dark";
+
+                    <tr>
+                        <td class="text-center">@item.NgayDiemDanh.ToString("dd/MM/yyyy")</td>
+                        <td class="text-center">@item.TietHoc</td>
+                        <td>@hocSinhTen</td>
+                        <td class="text-center">
+                            <span class="badge @badgeClass px-3 py-2">@tt</span>
+                        </td>
+                        <td>@ghiChu</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">Chưa có dữ liệu điểm danh cho lớp này.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="mt-3">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Quay lại Dashboard
+    </a>
+</div>

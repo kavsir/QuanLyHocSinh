@@ -1,0 +1,78 @@
+﻿@model Student_management.Models.Hocsinh
+
+@{
+    ViewData["Title"] = "Thêm Học sinh mới";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="HoTen" class="form-label"></label>
+                    <input asp-for="HoTen" class="form-control" />
+                    <span asp-validation-for="HoTen" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="NgaySinh" class="form-label"></label>
+                    <input asp-for="NgaySinh" class="form-control" type="date" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="GioiTinh" class="form-label"></label>
+                    <select asp-for="GioiTinh" class="form-select">
+                        <option value="">-- Chọn giới tính --</option>
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                    <span asp-validation-for="GioiTinh" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="MaLop" class="form-label"></label>
+                    <select asp-for="MaLop" class="form-select" asp-items="ViewBag.MaLop">
+                        <option value="">-- Chọn lớp học --</option>
+                    </select>
+                    <span asp-validation-for="MaLop" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Sdt" class="form-label"></label>
+                    <input asp-for="Sdt" class="form-control" type="tel" />
+                    <span asp-validation-for="Sdt" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DiaChi" class="form-label"></label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

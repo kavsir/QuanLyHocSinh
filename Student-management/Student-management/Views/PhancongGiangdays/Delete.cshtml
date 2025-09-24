@@ -1,0 +1,36 @@
+﻿@model Student_management.Models.PhancongGiangday
+
+@{
+    ViewData["Title"] = "Xóa Phân công Giảng dạy";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h3 class="text-danger">Bạn có chắc chắn muốn xóa phân công này không?</h3>
+<hr />
+
+<div class="card shadow-sm bg-light">
+    <div class="card-header">
+        <h4>Thông tin Phân công sẽ bị xóa</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Lớp học</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.TenLop</dd>
+
+            <dt class="col-sm-3">Môn học</dt>
+            <dd class="col-sm-9">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+
+            <dt class="col-sm-3">Giáo viên</dt>
+            <dd class="col-sm-9">@Model.MaGvNavigation?.HoTen</dd>
+
+            <dt class="col-sm-3">Học kỳ</dt>
+            <dd class="col-sm-9">@Model.MaHkNavigation?.TenHk</dd>
+        </dl>
+    </div>
+</div>
+
+<form asp-action="Delete" class="mt-3">
+    <input type="hidden" asp-for="MaPc" />
+    <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt me-2"></i>Xác nhận Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy bỏ</a>
+</form>

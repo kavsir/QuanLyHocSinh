@@ -1,0 +1,20 @@
+﻿@model Student_management.Models.Hocphi
+@{
+    ViewData["Title"] = "Tạo Phiếu thu";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3"><label asp-for="MaHs" class="form-label"></label><select asp-for="MaHs" class="form-select" asp-items="ViewBag.MaHs"><option value="">-- Chọn học sinh --</option></select><span asp-validation-for="MaHs" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="MaHk" class="form-label"></label><select asp-for="MaHk" class="form-select" asp-items="ViewBag.MaHk"><option value="">-- Chọn học kỳ --</option></select><span asp-validation-for="MaHk" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="SoTien" class="form-label"></label><input asp-for="SoTien" class="form-control" type="number" /><span asp-validation-for="SoTien" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="NgayDong" class="form-label"></label><input asp-for="NgayDong" class="form-control" type="date" /><span asp-validation-for="NgayDong" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="TrangThai" class="form-label"></label><select asp-for="TrangThai" class="form-select"><option value="Chưa đóng">Chưa đóng</option><option value="Đã đóng">Đã đóng</option></select><span asp-validation-for="TrangThai" class="text-danger"></span></div>
+            <div class="form-group"><button type="submit" class="btn btn-primary">Tạo mới</button> <a asp-action="Index" class="btn btn-secondary">Quay lại</a></div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model Student_management.Models.MyScheduleViewModel
+
+@{
+    ViewData["Title"] = "Thời khóa biểu cá nhân";
+    var daysOfWeek = new List<string> { "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" };
+    var tietHocMax = 10;
+}
+
+<h1>@ViewData["Title"]</h1>
+<h4>Giáo viên: <span class="text-primary">@Model.TenGiaoVien</span></h4>
+<h5>Áp dụng cho: <span class="text-muted">@Model.TenHocKy</span></h5>
+<hr />
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 8%;">Tiết</th>
+                        @foreach (var day in daysOfWeek)
+                        {
+                            <th>@day</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int tiet = 1; tiet <= tietHocMax; tiet++)
+                    {
+                        <tr>
+                            <td class="fw-bold align-middle">Tiết @tiet</td>
+                            @foreach (var day in daysOfWeek)
+                            {
+                                <td>
+                                    @if (Model.TimetableGrid.ContainsKey(day) && Model.TimetableGrid[day].ContainsKey(tiet))
+                                    {
+                                        var lich = Model.TimetableGrid[day][tiet];
+                                        <div class="h-100 p-2 bg-light border rounded">
+                                            <div class="fw-bold text-primary">@lich.MaMonHocNavigation?.TenMonHoc</div>
+                                            <div>Lớp: @lich.MaLopNavigation?.TenLop</div>
+                                            <div class="small text-muted">Phòng: @lich.MaPhongNavigation?.TenPhong</div>
+                                        </div>
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

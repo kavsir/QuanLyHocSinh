@@ -1,0 +1,115 @@
+﻿@model Student_management.Models.GradeManagementViewModel
+
+@{
+    ViewData["Title"] = "Nhập điểm";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h4>Lớp: <span class="text-primary">@Model.TenLop</span></h4>
+<h5>Môn học: <span class="text-primary">@Model.TenMonHoc</span> | <span class="text-muted">@Model.TenHocKy</span></h5>
+<hr />
+
+<form asp-action="ManageGrades" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="LopId" />
+    <input type="hidden" asp-for="MonHocId" />
+    <input type="hidden" asp-for="HocKyId" />
+    <input type="hidden" asp-for="TenLop" />
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 5%;">STT</th>
+                    <th style="width: 35%;">Họ và tên</th>
+                    <th class="text-center">Điểm Miệng</th>
+                    <th class="text-center">Điểm 15p</th>
+                    <th class="text-center">Điểm 1 Tiết</th>
+                    <th class="text-center">Điểm Thi</th>
+                    <th class="text-center bg-primary">Điểm TBM</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.GradeEntries.Count; i++)
+                {
+                    <tr class="grade-row" data-row-index="@i">
+                        <td class="text-center align-middle">@(i + 1)</td>
+                        <td class="align-middle">
+                            @Model.GradeEntries[i].HoTenHs
+                            <input type="hidden" asp-for="@Model.GradeEntries[i].MaHs" />
+                            <input type="hidden" asp-for="@Model.GradeEntries[i].MaDiem" />
+                        </td>
+                        <td><input type="number" step="0.1" min="0" max="10" class="form-control grade-input" asp-for="@Model.GradeEntries[i].DiemMieng" /></td>
+                        <td><input type="number" step="0.1" min="0" max="10" class="form-control grade-input" asp-for="@Model.GradeEntries[i].Diem15p" /></td>
+                        <td><input type="number" step="0.1" min="0" max="10" class="form-control grade-input" asp-for="@Model.GradeEntries[i].Diem1Tiet" /></td>
+                        <td><input type="number" step="0.1" min="0" max="10" class="form-control grade-input" asp-for="@Model.GradeEntries[i].DiemThi" /></td>
+                        <td class="text-center align-middle fw-bold">
+                            <span class="avg-grade"></span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Lưu Bảng điểm</button>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Quay lại Dashboard</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        // Hàm tính điểm trung bình cho một hàng
+        function calculateAverage(rowIndex) {
+            const row = $(`.grade-row[data-row-index='${rowIndex}']`);
+            const diemMieng = parseFloat(row.find("input[name$='DiemMieng']").val()) || 0;
+            const diem15p = parseFloat(row.find("input[name$='Diem15p']").val()) || 0;
+            const diem1Tiet = parseFloat(row.find("input[name$='Diem1Tiet']").val()) || 0;
+            const diemThi = parseFloat(row.find("input[name$='DiemThi']").val()) || 0;
+            const tongDiem = diemMieng + diem15p + (diem1Tiet * 2) + (diemThi * 3);
+            const heSo = 1 + 1 + 2 + 3;
+            let diemTB = (tongDiem > 0) ? tongDiem / heSo : 0;
+            const avgCell = row.find('.avg-grade');
+            avgCell.text(diemTB.toFixed(2));
+            if (diemTB < 5) { avgCell.css('color', 'red'); }
+            else if (diemTB < 8) { avgCell.css('color', 'blue'); }
+            else { avgCell.css('color', 'green'); }
+        }
+
+        // ==========================================================
+        // === SCRIPT MỚI: KIỂM TRA DỮ LIỆU NHẬP TRỰC TIẾP ===
+        // ==========================================================
+        function validateGradeInput(inputElement) {
+            const value = parseFloat($(inputElement).val());
+            // isNaN(value) để xử lý trường hợp người dùng xóa hết số
+            if (isNaN(value) || value < 0 || value > 10) {
+                $(inputElement).addClass('is-invalid'); // Thêm viền đỏ của Bootstrap
+            } else {
+                $(inputElement).removeClass('is-invalid'); // Bỏ viền đỏ nếu hợp lệ
+            }
+        }
+
+        $(document).ready(function () {
+            // Gắn sự kiện 'input' cho tất cả các ô điểm
+            $('.grade-input').on('input', function () {
+                // Gọi hàm kiểm tra trực tiếp
+                validateGradeInput(this);
+
+                // Gọi hàm tính TBM
+                const rowIndex = $(this).closest('.grade-row').data('row-index');
+                calculateAverage(rowIndex);
+            });
+
+            // Tính điểm trung bình và kiểm tra dữ liệu cho tất cả các hàng khi tải trang
+            $('.grade-row').each(function () {
+                const rowIndex = $(this).data('row-index');
+                calculateAverage(rowIndex);
+                $(this).find('.grade-input').each(function() {
+                    validateGradeInput(this);
+                });
+            });
+        });
+    </script>
+}

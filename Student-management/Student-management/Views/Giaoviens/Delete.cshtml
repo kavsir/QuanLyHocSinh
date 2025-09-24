@@ -1,0 +1,53 @@
+﻿@model Student_management.Models.Giaovien
+
+@{
+    ViewData["Title"] = "Xác nhận Xóa Giáo viên";
+}
+
+<h1 class="text-danger">@ViewData["Title"]</h1>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger mt-3">
+        <h4 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>Không thể thực hiện hành động!</h4>
+        <p>@ViewBag.ErrorMessage</p>
+        <hr>
+        <p class="mb-0">Bạn cần phải xóa các tài khoản, hủy phân công, xóa lịch dạy và thay đổi GVCN của các lớp liên quan trước khi có thể xóa giáo viên này.</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning mt-3">
+        <h4 class="alert-heading">Cảnh báo!</h4>
+        <p>Bạn có chắc chắn muốn xóa vĩnh viễn giáo viên này không? Hành động này không thể được hoàn tác.</p>
+    </div>
+}
+
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h5>Thông tin Giáo viên sẽ bị xóa</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Họ và Tên</dt>
+            <dd class="col-sm-9">@Model.HoTen</dd>
+
+            <dt class="col-sm-3">Chuyên Môn</dt>
+            <dd class="col-sm-9">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="MaGv" />
+
+            @if (ViewBag.ErrorMessage == null)
+            {
+                <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt me-2"></i>Xác nhận Xóa</button>
+            }
+            <a asp-action="Index" class="btn btn-secondary">Hủy bỏ</a>
+        </form>
+    </div>
+</div>

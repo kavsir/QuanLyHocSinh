@@ -1,0 +1,369 @@
+cập nhật lại index để bổ sung thêm phần của giaovien mà không bị xung đột, tối sẽ gửi cả 2 file tôi chắt lọc được: @* 1. Thay đổi model thành object để có thể nhận nhiều loại ViewModel *@ 
+@model object
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+@* 2. Kiểm tra loại ViewModel được gửi từ Controller *@
+
+
+@if (Model is Student_management.Models.AdminDashboardViewModel adminModel)
+{
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="mt-4">Bảng điều khiển Admin</h1>
+            <div class="mt-4">
+                <form asp-controller="Home" asp-action="Index" method="get" class="d-flex align-items-center">
+                    <select asp-for="@adminModel.SelectedNamHocId" asp-items="adminModel.NamHocOptions" class="form-select me-2" style="width: 250px;"></select>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-filter me-2"></i>Lọc</button>
+                </form>
+            </div>
+        </div>
+        <ol class="breadcrumb mb-4"><li class="breadcrumb-item active">Tổng quan hệ thống cho năm học được chọn</li></ol>
+        <div class="row">
+            <div class="col-xl-3 col-md-6"><div class="card bg-primary text-white mb-4"><div class="card-body">Tổng số Học sinh <div class="fs-3 fw-bold">@adminModel.TongHocSinh</div></div></div></div>
+            <div class="col-xl-3 col-md-6"><div class="card bg-warning text-white mb-4"><div class="card-body">Tổng số Giáo viên <div class="fs-3 fw-bold">@adminModel.TongGiaoVien</div></div></div></div>
+            <div class="col-xl-3 col-md-6"><div class="card bg-success text-white mb-4"><div class="card-body">Tổng số Lớp học <div class="fs-3 fw-bold">@adminModel.TongLopHoc</div></div></div></div>
+            <div class="col-xl-3 col-md-6"><div class="card bg-info text-white mb-4"><div class="card-body">Tỷ lệ GV/HS <div class="fs-3 fw-bold">1 / @adminModel.TiLeGvHs.ToString("F1")</div></div></div></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6"><div class="card bg-danger text-white mb-4"><div class="card-body">Tài khoản cần tạo <div class="fs-3 fw-bold">@adminModel.TaiKhoanCanTao</div></div><div class="card-footer d-flex align-items-center justify-content-between"><a class="small text-white stretched-link" asp-controller="Taikhoans" asp-action="CreateUserAndAccount">Tạo tài khoản ngay</a><div class="small text-white"><i class="fas fa-angle-right"></i></div></div></div></div>
+            <div class="col-lg-6"><div class="card bg-secondary text-white mb-4"><div class="card-body">Lớp chưa có GVCN <div class="fs-3 fw-bold">@adminModel.LopChuaCoGvcn</div></div><div class="card-footer d-flex align-items-center justify-content-between"><a class="small text-white stretched-link" asp-controller="Lops" asp-action="Index" asp-route-filter="no_gvcn">Xem danh sách lớp</a><div class="small text-white"><i class="fas fa-angle-right"></i></div></div></div></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-7"><div class="card mb-4"><div class="card-header"><i class="fas fa-chart-bar me-1"></i>Biểu đồ Sĩ số các lớp</div><div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div></div></div>
+            <div class="col-xl-5">
+                <div class="card mb-4">
+                    <div class="card-header"><i class="fas fa-user-clock me-1"></i>Học sinh mới nhất</div><div class="list-group list-group-flush">
+                        @if (adminModel.HocSinhMoiNhat.Any())
+                        {
+                            @foreach (var hs in adminModel.HocSinhMoiNhat)
+                            {
+                                <a asp-controller="Hocsinhs" asp-action="Details" asp-route-id="@hs.MaHs" class="list-group-item list-group-item-action">
+                                    <div class="fw-bold">@hs.HoTen</div><small class="text-muted">Lớp: @hs.MaLopNavigation?.TenLop</small>
+                                </a>
+                            }
+                        }
+                        else
+                        {
+                            <div class="list-group-item">Chưa có học sinh nào.</div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var ctx = document.getElementById("myBarChart");
+                if (ctx) { new Chart(ctx, { type: 'bar', data: { labels: @Html.Raw(Json.Serialize(adminModel.TenLop)), datasets: [{ label: "Sĩ số", backgroundColor: "rgba(2,117,216,0.8)", data: @Html.Raw(Json.Serialize(adminModel.SiSoMoiLop)), }], }, options: { responsive: true, scales: { y: { beginAtZero: true } } } }); }
+            });
+        </script>
+    }
+}
+else if (Model is Student_management.Models.TeacherDashboardViewModel teacherModel)
+{
+    <div class="container-fluid">
+        <h1 class="mt-4">Bảng điều khiển Giáo viên</h1>
+        <ol class="breadcrumb mb-4"><li class="breadcrumb-item active">Chào mừng, @teacherModel.HoTenGiaoVien</li></ol>
+        <div class="row">
+            <div class="col-xl-6 col-md-6"><div class="card bg-info text-white mb-4"><div class="card-body">Số lớp đang dạy<div class="display-4 fw-bold text-end">@teacherModel.TongSoLopDangDay</div></div></div></div>
+            <div class="col-xl-6 col-md-6"><div class="card bg-success text-white mb-4"><div class="card-body">Tổng số Học sinh<div class="display-4 fw-bold text-end">@teacherModel.TongSoHocSinhPhuTrach</div></div></div></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header"><i class="fas fa-list-alt me-2"></i>Các lớp được phân công (Học kỳ hiện tại)</div>
+                    <div class="card-body">
+                        @if (teacherModel.CacLopDuocPhanCong.Any())
+                        {
+                            <div class="list-group">
+                                @foreach (var lop in teacherModel.CacLopDuocPhanCong)
+                                {
+                                    <a asp-controller="Diemdanhs" asp-action="TakeAttendance" asp-route-lopId="@lop.MaLop" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Lớp: @lop.TenLop</h5>
+                                            <small>Sĩ số: @lop.SiSo</small>
+                                        </div>
+                                        <p class="mb-1">
+                                            <span class="me-3">Phụ trách môn: <strong>@lop.TenMonHoc</strong></span>
+                                        </p>
+                                        <div>
+                                            <a asp-controller="Diems" asp-action="ManageGrades" asp-route-lopId="@lop.MaLop" asp-route-monHocId="@lop.MaMonHoc" class="btn btn-sm btn-primary me-2">
+                                                <i class="fas fa-marker me-1"></i> Nhập điểm
+                                            </a>
+                                            <a asp-controller="Diemdanhs" asp-action="TakeAttendance" asp-route-lopId="@lop.MaLop" class="btn btn-sm btn-info">
+                                                <i class="fas fa-user-check me-1"></i> Điểm danh
+                                            </a>
+                                        </div>
+                                    </a>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="text-muted">Chưa có lớp nào được phân công trong học kỳ hiện tại.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header"><i class="fas fa-calendar-day me-2"></i>Lịch dạy hôm nay</div>
+                    <div class="card-body">
+                        @if (teacherModel.LichDayHomNay.Any())
+                        {
+                            <ul class="list-group list-group-flush">
+                                @foreach (var lich in teacherModel.LichDayHomNay)
+                                {
+                                    <li class="list-group-item">
+                                        <strong>Tiết @lich.TietHoc:</strong> Môn @lich.MaMonHocNavigation?.TenMonHoc
+                                        <br /><small class="text-muted">Tại lớp @lich.MaLopNavigation?.TenLop</small>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted text-center mt-3"><i class="fas fa-coffee fa-2x"></i><br />Hôm nay bạn không có tiết dạy.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Chào mừng đến với Hệ thống Quản lý Học sinh</h1>
+        <p>Đây là trang chủ dành cho học sinh.</p>
+    </div>
+}@model Student_management.Models.AdminDashboardViewModel?
+
+@{
+
+    ViewData["Title"] = "Bảng điều khiển";
+
+}
+
+
+
+@if (Model != null)
+
+{
+
+    <div class="container-fluid">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <h1 class="mt-4">@ViewData["Title"]</h1>
+
+            <div class="mt-4">
+
+                <form asp-controller="Home" asp-action="Index" method="get" class="d-flex align-items-center">
+
+                    <select asp-for="SelectedNamHocId" asp-items="Model.NamHocOptions" class="form-select me-2" style="width: 250px;"></select>
+
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-filter me-2"></i>Lọc</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <ol class="breadcrumb mb-4">
+
+            <li class="breadcrumb-item active">Tổng quan hệ thống cho năm học được chọn</li>
+
+        </ol>
+
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6"><div class="card bg-primary text-white mb-4"><div class="card-body">Tổng số Học sinh <div class="fs-3 fw-bold">@Model.TongHocSinh</div></div></div></div>
+
+            <div class="col-xl-3 col-md-6"><div class="card bg-warning text-white mb-4"><div class="card-body">Tổng số Giáo viên <div class="fs-3 fw-bold">@Model.TongGiaoVien</div></div></div></div>
+
+            <div class="col-xl-3 col-md-6"><div class="card bg-success text-white mb-4"><div class="card-body">Tổng số Lớp học <div class="fs-3 fw-bold">@Model.TongLopHoc</div></div></div></div>
+
+            <div class="col-xl-3 col-md-6"><div class="card bg-info text-white mb-4"><div class="card-body">Tỷ lệ GV/HS <div class="fs-3 fw-bold">1 / @Model.TiLeGvHs.ToString("F1")</div></div></div></div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-6"><div class="card bg-danger text-white mb-4"><div class="card-body">Tài khoản cần tạo <div class="fs-3 fw-bold">@Model.TaiKhoanCanTao</div></div><div class="card-footer d-flex align-items-center justify-content-between"><a class="small text-white stretched-link" asp-controller="Taikhoans" asp-action="Create">Tạo tài khoản ngay</a><div class="small text-white"><i class="fas fa-angle-right"></i></div></div></div></div>
+
+            <div class="col-lg-6"><div class="card bg-secondary text-white mb-4"><div class="card-body">Lớp chưa có GVCN <div class="fs-3 fw-bold">@Model.LopChuaCoGvcn</div></div><div class="card-footer d-flex align-items-center justify-content-between"><a class="small text-white stretched-link" asp-controller="Lops" asp-action="Index" asp-route-filter="no_gvcn">Xem danh sách lớp</a><div class="small text-white"><i class="fas fa-angle-right"></i></div></div></div></div>
+
+        </div>
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-xl-7">
+
+                <div class="card mb-4">
+
+                    <div class="card-header"><i class="fas fa-chart-bar me-1"></i>Biểu đồ Sĩ số các lớp</div>
+
+                    <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
+
+                </div>
+
+                <div class="card mb-4">
+
+                    <div class="card-header"><i class="fas fa-paper-plane me-1"></i>Lối tắt Quản lý</div>
+
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100 p-3" asp-controller="Hocsinhs" asp-action="Index"><i class="fas fa-user-graduate fa-2x mb-2"></i><div>Quản lý Học sinh</div></a></div>
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100 p-3" asp-controller="Giaoviens" asp-action="Index"><i class="fas fa-chalkboard-teacher fa-2x mb-2"></i><div>Quản lý Giáo viên</div></a></div>
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100 p-3" asp-controller="Lops" asp-action="Index"><i class="fas fa-school fa-2x mb-2"></i><div>Quản lý Lớp học</div></a></div>
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-secondary w-100 p-3" asp-controller="PhancongGiangdays" asp-action="Index"><i class="fas fa-tasks fa-2x mb-2"></i><div>Phân công Dạy</div></a></div>
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-secondary w-100 p-3" asp-controller="Lichhocs" asp-action="Index"><i class="fas fa-calendar-alt fa-2x mb-2"></i><div>Xếp Lịch học</div></a></div>
+
+                            <div class="col-md-4 mb-3"><a class="btn btn-outline-secondary w-100 p-3" asp-controller="Diems" asp-action="Index"><i class="fas fa-marker fa-2x mb-2"></i><div>Quản lý Điểm</div></a></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-5">
+
+                <div class="card mb-4">
+
+                    <div class="card-header"><i class="fas fa-user-clock me-1"></i>Học sinh mới nhất</div>
+
+                    <div class="list-group list-group-flush">
+
+                        @if (Model.HocSinhMoiNhat.Any())
+
+                        {
+
+                            @foreach (var hs in Model.HocSinhMoiNhat)
+
+                            {
+
+                                <a asp-controller="Hocsinhs" asp-action="Details" asp-route-id="@hs.MaHs" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+
+                                    <div>
+
+                                        <div class="fw-bold">@hs.HoTen</div>
+
+                                        <small class="text-muted">Lớp: @hs.MaLopNavigation?.TenLop</small>
+
+                                    </div>
+
+                                    <i class="fas fa-chevron-right opacity-25"></i>
+
+                                </a>
+
+                            }
+
+                        }
+
+                        else
+
+                        {
+
+                            <div class="list-group-item">Chưa có học sinh nào.</div>
+
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+}
+
+else
+
+{
+
+    <div class="text-center">
+
+        <h1 class="display-4">Chào mừng bạn đến với Hệ thống Quản lý Học sinh</h1>
+
+        <p>Vui lòng sử dụng menu điều hướng để truy cập các chức năng của bạn.</p>
+
+    </div>
+
+}
+
+
+
+@section Scripts {
+
+    @if (Model != null)
+
+    {
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                var ctx = document.getElementById("myBarChart");
+
+                if (ctx) {
+
+                    new Chart(ctx, {
+
+                        type: 'bar',
+
+                        data: {
+
+                            labels: @Html.Raw(Json.Serialize(Model.TenLop)),
+
+                            datasets: [{
+
+                                label: "Sĩ số",
+
+                                backgroundColor: "rgba(2,117,216,0.8)",
+
+                                data: @Html.Raw(Json.Serialize(Model.SiSoMoiLop)),
+
+                            }],
+
+                        },
+
+                        options: { responsive: true, scales: { y: { beginAtZero: true } } }
+
+                    });
+
+                }
+
+            });
+
+        </script>
+
+    }
+
+}
+tại tôi tự làm thì  sau khi gộp view thì số liệu thống kê (Tổng số HS, GV, Lớp, Tỉ lệ GV/HS) không thay đổi theo năm học

@@ -17,61 +17,317 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Student_management
 build_property.RootNamespace = Student_management
-build_property.ProjectDir = D:\CongNghePhanMen\QuanLyHocSinh\Student-management\Student-management\
+build_property.ProjectDir = D:\MyCourses\ThirdYearCourse\HocKy1\CongNghePhanMen\QuanLyHocSinh\Student-management\Student-management\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\CongNghePhanMen\QuanLyHocSinh\Student-management\Student-management
+build_property.MSBuildProjectDirectory = D:\MyCourses\ThirdYearCourse\HocKy1\CongNghePhanMen\QuanLyHocSinh\Student-management\Student-management
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/Index.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diemdanhs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbWRhbmhzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diemdanhs/TakeAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbWRhbmhzXFRha2VBdHRlbmRhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Diems/ManageGrades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbXNcTWFuYWdlR3JhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Giaoviens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Giaoviens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Giaoviens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Giaoviens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Giaoviens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb3ZpZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hockys/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ja3lzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hockys/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ja3lzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hockys/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ja3lzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hockys/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ja3lzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocphis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jcGhpc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocphis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jcGhpc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocphis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jcGhpc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocphis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jcGhpc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocphis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jcGhpc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocsinhs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocsinhs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocsinhs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocsinhs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Hocsinhs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jc2luaHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/Privacy.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/NamHoc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtSG9jXENyZWF0ZS5jc2h0bWw=
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Home/StudentPortalError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdHVkZW50UG9ydGFsRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/NamHoc/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtSG9jXERlbGV0ZS5jc2h0bWw=
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/NamHoc/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtSG9jXEVkaXQuY3NodG1s
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/NamHoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtSG9jXEluZGV4LmNzaHRtbA==
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/DeleteError.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lichhocs/MySchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGljaGhvY3NcTXlTY2hlZHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/ClassDetailsForTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xDbGFzc0RldGFpbHNGb3JUZWFjaGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Lops/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Monhocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Monhocs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Monhocs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Monhocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Monhocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaG9jc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Namhocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtaG9jc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Namhocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtaG9jc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Namhocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFtaG9jc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/PhancongGiangdays/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbmNvbmdHaWFuZ2RheXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/PhancongGiangdays/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbmNvbmdHaWFuZ2RheXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/PhancongGiangdays/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbmNvbmdHaWFuZ2RheXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/PhancongGiangdays/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbmNvbmdHaWFuZ2RheXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/PhancongGiangdays/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbmNvbmdHaWFuZ2RheXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Phonghocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdob2NzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Phonghocs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdob2NzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Phonghocs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdob2NzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Phonghocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdob2NzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Phonghocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdob2NzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Profile/NoProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxOb1Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/DeleteError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXERlbGV0ZUVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/Error.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/_ViewImports.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/CreateUserAndAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXENyZWF0ZVVzZXJBbmRBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Taikhoans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/_ViewStart.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/_Layout.cshtml]
+[D:/MyCourses/ThirdYearCourse/HocKy1/CongNghePhanMen/QuanLyHocSinh/Student-management/Student-management/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f5dkmsod80

@@ -7,11 +7,11 @@ public partial class Taikhoan
 {
     public int MaTk { get; set; }
 
-    public string TenDangNhap { get; set; } = null!;
+    public string? TenDangNhap { get; set; }
 
-    public string MatKhau { get; set; } = null!;
+    public string? MatKhau { get; set; }
 
-    public string VaiTro { get; set; } = null!;
+    public string? VaiTro { get; set; }
 
     public int? MaHs { get; set; }
 

@@ -1,0 +1,51 @@
+﻿@model Student_management.Models.Phonghoc
+
+@{
+    ViewData["Title"] = "Xác nhận Xóa Phòng học";
+}
+
+<h1 class="text-danger">@ViewData["Title"]</h1>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">Không thể thực hiện hành động!</h4>
+        <p>@ViewBag.ErrorMessage</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        <h4 class="alert-heading">Cảnh báo!</h4>
+        <p>Bạn có chắc chắn muốn xóa vĩnh viễn phòng học này không? Hành động này không thể được hoàn tác.</p>
+    </div>
+}
+
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h5>Thông tin Phòng học sẽ bị xóa</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.TenPhong)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.TenPhong)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.SucChua)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.SucChua)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.ViTri)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.ViTri)</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="MaPhong" />
+
+            @if (ViewBag.ErrorMessage == null)
+            {
+                <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt me-2"></i>Xác nhận Xóa</button>
+            }
+            <a asp-action="Index" class="btn btn-secondary">Hủy bỏ</a>
+        </form>
+    </div>
+</div>

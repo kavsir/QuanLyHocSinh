@@ -1,44 +1,118 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+
+@{
+    var username = User.Identity?.Name;
+    var role = User.FindFirst(ClaimTypes.Role)?.Value;
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Student_management</title>
+    <title>@ViewData["Title"] - Quản lý Học sinh</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Student_management.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Student_management</a>
+                <a class="navbar-brand fw-bold text-primary" asp-controller="Home" asp-action="Index"><i class="fas fa-school me-2"></i>Quản lý Học sinh</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    @if (User.Identity is { IsAuthenticated: true })
+                    {
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(currentController == "Home" ? "active fw-bold" : "")" asp-controller="Home" asp-action="Index"><i class="fas fa-tachometer-alt me-2"></i>Bảng điều khiển</a>
+                            </li>
+
+                            @if (role == "Admin")
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Học vụ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="Namhocs" asp-action="Index">Năm học</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Hockys" asp-action="Index">Học kỳ</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Monhocs" asp-action="Index">Môn học</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Lops" asp-action="Index">Lớp học</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Nhân sự</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="Giaoviens" asp-action="Index">Giáo viên</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Hocsinhs" asp-action="Index">Học sinh</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Nghiệp vụ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="PhancongGiangdays" asp-action="Index">Phân công Giảng dạy</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Lichhocs" asp-action="Index">Xếp Thời khóa biểu</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Diems" asp-action="Index">Quản lý Điểm</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Hocphis" asp-action="Index">Quản lý Học phí</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Hệ thống</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="Taikhoans" asp-action="Index">Tài khoản</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Phonghocs" asp-action="Index">Phòng học</a></li>
+                                    </ul>
+                                </li>
+                            }
+
+                            @if (role == "GiaoVien")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="Lichhocs" asp-action="MySchedule">Thời khóa biểu</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity is { IsAuthenticated: true })
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fas fa-user-circle me-2"></i>@username (@role)
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" asp-controller="Profile" asp-action="Index">Thông tin cá nhân</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" asp-controller="Account" asp-action="Logout"><i class="fas fa-sign-out-alt me-2"></i>Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Login"><i class="fas fa-sign-in-alt me-2"></i>Đăng nhập</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid px-4">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Student_management - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted mt-auto py-3 bg-light">
+        <div class="container-fluid px-4">
+            &copy; @DateTime.Now.Year - Student Management System
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

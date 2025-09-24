@@ -1,0 +1,41 @@
+﻿@model Student_management.Models.Diem
+
+@{
+    ViewData["Title"] = "Chi tiết Bảng điểm";
+}
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h4>@ViewData["Title"]</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Học sinh</dt>
+            <dd class="col-sm-9">@Model.MaHsNavigation?.HoTen</dd>
+
+            <dt class="col-sm-3">Môn học</dt>
+            <dd class="col-sm-9">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+
+            <dt class="col-sm-3">Học kỳ</dt>
+            <dd class="col-sm-9">@Model.MaHkNavigation?.TenHk</dd>
+
+            <hr class="my-3" />
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.DiemMieng)</dt>
+            <dd class="col-sm-9">@Model.DiemMieng</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Diem15p)</dt>
+            <dd class="col-sm-9">@Model.Diem15p</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Diem1Tiet)</dt>
+            <dd class="col-sm-9">@Model.Diem1Tiet</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.DiemThi)</dt>
+            <dd class="col-sm-9">@Model.DiemThi</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model.MaDiem" class="btn btn-warning"><i class="fas fa-edit me-2"></i>Chỉnh sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+    </div>
+</div>

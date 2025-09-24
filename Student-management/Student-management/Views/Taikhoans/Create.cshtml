@@ -1,0 +1,110 @@
+﻿@model Student_management.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Tạo tài khoản mới";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>Tạo tài khoản đăng nhập mới cho người dùng trong hệ thống.</p>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="card">
+                <div class="card-header">
+                    Thông tin tài khoản
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label asp-for="TenDangNhap" class="form-label"></label>
+                        <input asp-for="TenDangNhap" class="form-control" />
+                        <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="MatKhau" class="form-label"></label>
+                        <input asp-for="MatKhau" type="password" class="form-control" />
+                        <span asp-validation-for="MatKhau" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="VaiTro" class="form-label"></label>
+                        <select asp-for="VaiTro" class="form-select">
+                            <option value="">-- Chọn vai trò --</option>
+                            <option value="Admin">Admin</option>
+                            <option value="GiaoVien">GiaoVien</option>
+                            <option value="HocSinh">HocSinh</option>
+                        </select>
+                        <span asp-validation-for="VaiTro" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    Liên kết với người dùng (tùy chọn)
+                </div>
+                <div class="card-body">
+                    <div id="student-select-div" class="mb-3" style="display:none;">
+                        <label class="form-label">Chọn Học sinh</label>
+                        <select asp-for="MaHs" class="form-select" asp-items="ViewBag.MaHs">
+                            <option value="">-- Chọn một học sinh --</option>
+                        </select>
+                    </div>
+
+                    <div id="teacher-select-div" class="mb-3" style="display:none;">
+                        <label class="form-label">Chọn Giáo viên</label>
+                        <select asp-for="MaGv" class="form-select" asp-items="ViewBag.MaGv">
+                            <option value="">-- Chọn một giáo viên --</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Hàm này được gọi khi trang tải xong và mỗi khi dropdown VaiTro thay đổi
+        function toggleUserSelects() {
+            var selectedRole = $('#VaiTro').val();
+            var studentDiv = $('#student-select-div');
+            var teacherDiv = $('#teacher-select-div');
+
+            // Ẩn cả hai trước khi quyết định hiện cái nào
+            studentDiv.hide();
+            teacherDiv.hide();
+
+            // Xóa giá trị đã chọn để tránh gửi nhầm dữ liệu
+            $('#MaHs').val('');
+            $('#MaGv').val('');
+
+            if (selectedRole === 'HocSinh') {
+                studentDiv.show();
+            } else if (selectedRole === 'GiaoVien') {
+                teacherDiv.show();
+            }
+        }
+
+        $(document).ready(function () {
+            // Gắn sự kiện "change" vào dropdown VaiTro
+            $('#VaiTro').on('change', function () {
+                toggleUserSelects();
+            });
+
+            // Gọi hàm một lần khi tải trang để set trạng thái ban đầu
+            toggleUserSelects();
+        });
+    </script>
+}

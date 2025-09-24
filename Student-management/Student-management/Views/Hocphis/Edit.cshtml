@@ -1,0 +1,60 @@
+﻿@model Student_management.Models.Hocphi
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Phiếu thu";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="MaHp" />
+
+                    <div class="mb-3">
+                        <label asp-for="MaHs" class="form-label"></label>
+                        <input class="form-control" value="@Model.MaHsNavigation?.HoTen" readonly />
+                        <input type="hidden" asp-for="MaHs" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="MaHk" class="form-label"></label>
+                        <input class="form-control" value="@Model.MaHkNavigation?.TenHk" readonly />
+                        <input type="hidden" asp-for="MaHk" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="SoTien" class="form-label"></label>
+                        <input asp-for="SoTien" class="form-control" type="number" />
+                        <span asp-validation-for="SoTien" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="NgayDong" class="form-label"></label>
+                        <input asp-for="NgayDong" class="form-control" type="date" />
+                        <span asp-validation-for="NgayDong" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="TrangThai" class="form-label"></label>
+                        <select asp-for="TrangThai" class="form-select">
+                            <option value="Chưa đóng">Chưa đóng</option>
+                            <option value="Đã đóng">Đã đóng</option>
+                        </select>
+                        <span asp-validation-for="TrangThai" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Lưu thay đổi</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

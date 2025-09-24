@@ -1,0 +1,66 @@
+﻿@model Student_management.Models.Diem
+
+@{
+    ViewData["Title"] = "Cập nhật Điểm số";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4>@ViewData["Title"]</h4>
+            </div>
+            <div class="card-body">
+                <dl class="row bg-light p-3 rounded mb-4">
+                    <dt class="col-sm-3">Học sinh</dt>
+                    <dd class="col-sm-9">@Model.MaHsNavigation?.HoTen</dd>
+                    <dt class="col-sm-3">Môn học</dt>
+                    <dd class="col-sm-9">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+                    <dt class="col-sm-3">Học kỳ</dt>
+                    <dd class="col-sm-9">@Model.MaHkNavigation?.TenHk</dd>
+                </dl>
+
+                <form asp-action="Edit" id="editForm">
+                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+                    <input type="hidden" asp-for="MaDiem" />
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="DiemMieng" class="form-label"></label>
+                            <input asp-for="DiemMieng" class="form-control" type="number" step="0.1" min="0" max="10" />
+                            <span asp-validation-for="DiemMieng" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Diem15p" class="form-label"></label>
+                            <input asp-for="Diem15p" class="form-control" type="number" step="0.1" min="0" max="10" />
+                            <span asp-validation-for="Diem15p" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Diem1Tiet" class="form-label"></label>
+                            <input asp-for="Diem1Tiet" class="form-control" type="number" step="0.1" min="0" max="10" />
+                            <span asp-validation-for="Diem1Tiet" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="DiemThi" class="form-label"></label>
+                            <input asp-for="DiemThi" class="form-control" type="number" step="0.1" min="0" max="10" />
+                            <span asp-validation-for="DiemThi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-end">
+                <a asp-action="Index" class="btn btn-secondary me-2">Hủy bỏ</a>
+                <button type="submit" form="editForm" class="btn btn-primary"><i class="fas fa-save me-2"></i>Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,29 @@
+﻿@model Student_management.Models.Monhoc
+
+@{
+    ViewData["Title"] = "Chi tiết Môn học";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h4>Môn học: @Model.TenMonHoc</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.TenMonHoc)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.TenMonHoc)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.SoTiet)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.SoTiet)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.HeSo)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.HeSo)</dd>
+        </dl>
+    </div>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaMonHoc" class="btn btn-primary">Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

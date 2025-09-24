@@ -1,260 +1,178 @@
-﻿-- Tạo database
+﻿------------------------------------------------------
+-- Xóa database cũ (nếu có)
+------------------------------------------------------
+USE master;
+GO
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = N'QuanLyHocSinh')
+BEGIN
+    ALTER DATABASE QuanLyHocSinh SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE QuanLyHocSinh;
+END
+GO
+
+------------------------------------------------------
+-- Tạo database mới
+------------------------------------------------------
 CREATE DATABASE QuanLyHocSinh;
 GO
 USE QuanLyHocSinh;
 GO
 
+------------------------------------------------------
 -- Bảng Năm học
+------------------------------------------------------
 CREATE TABLE NAMHOC (
-    MaNamHoc INT NOT NULL IDENTITY(1,1),
-    TenNamHoc NVARCHAR(50) NOT NULL,
-    NgayBatDau DATE NOT NULL,
-    NgayKetThuc DATE NOT NULL,
-    CONSTRAINT PK_NAMHOC PRIMARY KEY (MaNamHoc)
+    MaNamHoc INT IDENTITY(1,1) PRIMARY KEY,
+    TenNamHoc NVARCHAR(50),
+    NgayBatDau DATE,
+    NgayKetThuc DATE
 );
 
+------------------------------------------------------
 -- Bảng Học kỳ
+------------------------------------------------------
 CREATE TABLE HOCKY (
-    MaHK INT NOT NULL IDENTITY(1,1),
-    TenHK NVARCHAR(50) NOT NULL,
-    NgayBatDau DATE NOT NULL,
-    NgayKetThuc DATE NOT NULL,
-    MaNamHoc INT NOT NULL,
-    CONSTRAINT PK_HOCKY PRIMARY KEY (MaHK),
-    CONSTRAINT FK_HOCKY_NAMHOC FOREIGN KEY (MaNamHoc) REFERENCES NAMHOC(MaNamHoc)
+    MaHK INT IDENTITY(1,1) PRIMARY KEY,
+    TenHK NVARCHAR(50),
+    NgayBatDau DATE,
+    NgayKetThuc DATE,
+    MaNamHoc INT FOREIGN KEY REFERENCES NAMHOC(MaNamHoc)
 );
 
--- Bảng Lớp
-CREATE TABLE LOP (
-    MaLop INT NOT NULL IDENTITY(1,1),
-    TenLop NVARCHAR(50) NOT NULL,
-    SiSo INT,
-    MaNamHoc INT NOT NULL,
-    MaGVCN INT NULL,
-    CONSTRAINT PK_LOP PRIMARY KEY (MaLop),
-    CONSTRAINT FK_LOP_NAMHOC FOREIGN KEY (MaNamHoc) REFERENCES NAMHOC(MaNamHoc),
-    CONSTRAINT FK_LOP_GIAOVIEN FOREIGN KEY (MaGVCN) REFERENCES GIAOVIEN(MaGV)
-);
-
+------------------------------------------------------
 -- Bảng Môn học
+------------------------------------------------------
 CREATE TABLE MONHOC (
-    MaMonHoc INT NOT NULL IDENTITY(1,1),
-    TenMonHoc NVARCHAR(100) NOT NULL,
+    MaMonHoc INT IDENTITY(1,1) PRIMARY KEY,
+    TenMonHoc NVARCHAR(100),
     SoTiet INT,
-    HeSo FLOAT,
-    CONSTRAINT PK_MONHOC PRIMARY KEY (MaMonHoc)
+    HeSo DECIMAL(3,2)
 );
 
+------------------------------------------------------
 -- Bảng Giáo viên
+------------------------------------------------------
 CREATE TABLE GIAOVIEN (
-    MaGV INT NOT NULL IDENTITY(1,1),
-    HoTen NVARCHAR(100) NOT NULL,
+    MaGV INT IDENTITY(1,1) PRIMARY KEY,
+    HoTen NVARCHAR(100),
     NgaySinh DATE,
     GioiTinh NVARCHAR(10),
     DiaChi NVARCHAR(200),
     SDT NVARCHAR(20),
     Email NVARCHAR(100),
-    MaMonHoc INT NULL,
-    CONSTRAINT PK_GIAOVIEN PRIMARY KEY (MaGV),
-    CONSTRAINT FK_GIAOVIEN_MONHOC FOREIGN KEY (MaMonHoc) REFERENCES MONHOC(MaMonHoc)
+    MaMonHoc INT FOREIGN KEY REFERENCES MONHOC(MaMonHoc)
 );
 
+------------------------------------------------------
+-- Bảng Lớp
+------------------------------------------------------
+CREATE TABLE LOP (
+    MaLop INT IDENTITY(1,1) PRIMARY KEY,
+    TenLop NVARCHAR(50),
+    SiSo INT,
+    MaNamHoc INT FOREIGN KEY REFERENCES NAMHOC(MaNamHoc),
+    MaGVCN INT FOREIGN KEY REFERENCES GIAOVIEN(MaGV)
+);
+
+------------------------------------------------------
 -- Bảng Học sinh
+------------------------------------------------------
 CREATE TABLE HOCSINH (
-    MaHS INT NOT NULL IDENTITY(1,1),
-    HoTen NVARCHAR(100) NOT NULL,
+    MaHS INT IDENTITY(1,1) PRIMARY KEY,
+    HoTen NVARCHAR(100),
     NgaySinh DATE,
     GioiTinh NVARCHAR(10),
     DiaChi NVARCHAR(200),
     SDT NVARCHAR(20),
     Email NVARCHAR(100),
-    MaLop INT NOT NULL,
-    TrangThai NVARCHAR(20),
-    CONSTRAINT PK_HOCSINH PRIMARY KEY (MaHS),
-    CONSTRAINT FK_HOCSINH_LOP FOREIGN KEY (MaLop) REFERENCES LOP(MaLop)
+    MaLop INT FOREIGN KEY REFERENCES LOP(MaLop),
+    TrangThai NVARCHAR(20)
 );
 
+------------------------------------------------------
 -- Bảng Phòng học
+------------------------------------------------------
 CREATE TABLE PHONGHOC (
-    MaPhong INT NOT NULL IDENTITY(1,1),
-    TenPhong NVARCHAR(50) NOT NULL,
+    MaPhong INT IDENTITY(1,1) PRIMARY KEY,
+    TenPhong NVARCHAR(50),
     SucChua INT,
-    ViTri NVARCHAR(100),
-    CONSTRAINT PK_PHONGHOC PRIMARY KEY (MaPhong)
+    ViTri NVARCHAR(100)
 );
 
+------------------------------------------------------
 -- Bảng Phân công giảng dạy
+------------------------------------------------------
 CREATE TABLE PHANCONG_GIANGDAY (
-    MaPC INT NOT NULL IDENTITY(1,1),
-    MaGV INT NOT NULL,
-    MaMonHoc INT NOT NULL,
-    MaLop INT NOT NULL,
-    MaHK INT NOT NULL,
-    CONSTRAINT PK_PHANCONG_GIANGDAY PRIMARY KEY (MaPC),
-    CONSTRAINT FK_PC_GIAOVIEN FOREIGN KEY (MaGV) REFERENCES GIAOVIEN(MaGV),
-    CONSTRAINT FK_PC_MONHOC FOREIGN KEY (MaMonHoc) REFERENCES MONHOC(MaMonHoc),
-    CONSTRAINT FK_PC_LOP FOREIGN KEY (MaLop) REFERENCES LOP(MaLop),
-    CONSTRAINT FK_PC_HOCKY FOREIGN KEY (MaHK) REFERENCES HOCKY(MaHK)
+    MaPC INT IDENTITY(1,1) PRIMARY KEY,
+    MaGV INT FOREIGN KEY REFERENCES GIAOVIEN(MaGV),
+    MaMonHoc INT FOREIGN KEY REFERENCES MONHOC(MaMonHoc),
+    MaLop INT FOREIGN KEY REFERENCES LOP(MaLop),
+    MaHK INT FOREIGN KEY REFERENCES HOCKY(MaHK)
 );
 
+------------------------------------------------------
 -- Bảng Lịch học
+------------------------------------------------------
 CREATE TABLE LICHHOC (
-    MaLichHoc INT NOT NULL IDENTITY(1,1),
-    MaLop INT NOT NULL,
-    MaMonHoc INT NOT NULL,
-    MaGV INT NOT NULL,
-    MaPhong INT NOT NULL,
-    MaHK INT NOT NULL,
+    MaLichHoc INT IDENTITY(1,1) PRIMARY KEY,
+    MaLop INT FOREIGN KEY REFERENCES LOP(MaLop),
+    MaMonHoc INT FOREIGN KEY REFERENCES MONHOC(MaMonHoc),
+    MaGV INT FOREIGN KEY REFERENCES GIAOVIEN(MaGV),
+    MaPhong INT FOREIGN KEY REFERENCES PHONGHOC(MaPhong),
+    MaHK INT FOREIGN KEY REFERENCES HOCKY(MaHK),
     ThuTrongTuan NVARCHAR(20),
-    TietHoc INT,
-    CONSTRAINT PK_LICHHOC PRIMARY KEY (MaLichHoc),
-    CONSTRAINT FK_LH_LOP FOREIGN KEY (MaLop) REFERENCES LOP(MaLop),
-    CONSTRAINT FK_LH_MONHOC FOREIGN KEY (MaMonHoc) REFERENCES MONHOC(MaMonHoc),
-    CONSTRAINT FK_LH_GIAOVIEN FOREIGN KEY (MaGV) REFERENCES GIAOVIEN(MaGV),
-    CONSTRAINT FK_LH_PHONGHOC FOREIGN KEY (MaPhong) REFERENCES PHONGHOC(MaPhong),
-    CONSTRAINT FK_LH_HOCKY FOREIGN KEY (MaHK) REFERENCES HOCKY(MaHK)
+    TietHoc INT
 );
 
+------------------------------------------------------
 -- Bảng Điểm
+------------------------------------------------------
 CREATE TABLE DIEM (
-    MaDiem INT NOT NULL IDENTITY(1,1),
-    MaHS INT NOT NULL,
-    MaMonHoc INT NOT NULL,
-    MaHK INT NOT NULL,
-    DiemMieng FLOAT,
-    Diem15p FLOAT,
-    Diem1Tiet FLOAT,
-    DiemThi FLOAT,
-    CONSTRAINT PK_DIEM PRIMARY KEY (MaDiem),
-    CONSTRAINT FK_DIEM_HOCSINH FOREIGN KEY (MaHS) REFERENCES HOCSINH(MaHS),
-    CONSTRAINT FK_DIEM_MONHOC FOREIGN KEY (MaMonHoc) REFERENCES MONHOC(MaMonHoc),
-    CONSTRAINT FK_DIEM_HOCKY FOREIGN KEY (MaHK) REFERENCES HOCKY(MaHK)
+    MaDiem INT IDENTITY(1,1) PRIMARY KEY,
+    MaHS INT FOREIGN KEY REFERENCES HOCSINH(MaHS),
+    MaMonHoc INT FOREIGN KEY REFERENCES MONHOC(MaMonHoc),
+    MaHK INT FOREIGN KEY REFERENCES HOCKY(MaHK),
+    DiemMieng DECIMAL(4,2),
+    Diem15p DECIMAL(4,2),
+    Diem1Tiet DECIMAL(4,2),
+    DiemThi DECIMAL(4,2)
 );
 
+------------------------------------------------------
 -- Bảng Học phí
+------------------------------------------------------
 CREATE TABLE HOCPHI (
-    MaHP INT NOT NULL IDENTITY(1,1),
-    MaHS INT NOT NULL,
+    MaHP INT IDENTITY(1,1) PRIMARY KEY,
+    MaHS INT FOREIGN KEY REFERENCES HOCSINH(MaHS),
     SoTien DECIMAL(18,2),
     NgayDong DATE,
     TrangThai NVARCHAR(50),
-    MaHK INT NOT NULL,
-    CONSTRAINT PK_HOCPHI PRIMARY KEY (MaHP),
-    CONSTRAINT FK_HP_HOCSINH FOREIGN KEY (MaHS) REFERENCES HOCSINH(MaHS),
-    CONSTRAINT FK_HP_HOCKY FOREIGN KEY (MaHK) REFERENCES HOCKY(MaHK)
+    MaHK INT FOREIGN KEY REFERENCES HOCKY(MaHK)
 );
 
--- Bảng Tài khoản
+------------------------------------------------------
+-- Bảng Tài khoản (role chỉ là text: Admin/HocSinh/GiaoVien)
+------------------------------------------------------
 CREATE TABLE TAIKHOAN (
-    MaTK INT NOT NULL IDENTITY(1,1),
-    TenDangNhap NVARCHAR(50) UNIQUE NOT NULL,
-    MatKhau NVARCHAR(255) NOT NULL,
-    VaiTro NVARCHAR(20) NOT NULL,
-    MaHS INT NULL,
-    MaGV INT NULL,
-    CONSTRAINT PK_TAIKHOAN PRIMARY KEY (MaTK),
-    CONSTRAINT FK_TK_HOCSINH FOREIGN KEY (MaHS) REFERENCES HOCSINH(MaHS),
-    CONSTRAINT FK_TK_GIAOVIEN FOREIGN KEY (MaGV) REFERENCES GIAOVIEN(MaGV),
-    CONSTRAINT CK_TAIKHOAN_ROLE CHECK (
-        (VaiTro = 'HocSinh' AND MaHS IS NOT NULL AND MaGV IS NULL) OR
-        (VaiTro = 'GiaoVien' AND MaGV IS NOT NULL AND MaHS IS NULL) OR
-        (VaiTro = 'Admin' AND MaHS IS NULL AND MaGV IS NULL)
-    )
+    MaTK INT IDENTITY(1,1) PRIMARY KEY,
+    TenDangNhap NVARCHAR(50) UNIQUE,
+    MatKhau NVARCHAR(255),
+    VaiTro NVARCHAR(20), -- Admin / HocSinh / GiaoVien
+    MaHS INT NULL FOREIGN KEY REFERENCES HOCSINH(MaHS),
+    MaGV INT NULL FOREIGN KEY REFERENCES GIAOVIEN(MaGV)
 );
+-- Bảng Điểm danh
 
+GO
 
-------------------------------------------------------
--- Thêm dữ liệu mẫu
-------------------------------------------------------
-
--- Năm học
-INSERT INTO NAMHOC (TenNamHoc, NgayBatDau, NgayKetThuc)
-VALUES 
-(N'2024 - 2025', '2024-09-01', '2025-05-31'),
-(N'2025 - 2026', '2025-09-01', '2026-05-31');
-
--- Học kỳ
-INSERT INTO HOCKY (TenHK, NgayBatDau, NgayKetThuc, MaNamHoc)
-VALUES
-(N'Học kỳ 1', '2024-09-01', '2024-12-31', 1),
-(N'Học kỳ 2', '2025-01-01', '2025-05-31', 1);
-
--- Môn học
-INSERT INTO MONHOC (TenMonHoc, SoTiet, HeSo)
-VALUES
-(N'Toán', 60, 2.0),
-(N'Ngữ Văn', 60, 2.0),
-(N'Anh Văn', 45, 1.5),
-(N'Tin học', 45, 1.0);
-
--- Giáo viên
-INSERT INTO GIAOVIEN (HoTen, NgaySinh, GioiTinh, DiaChi, SDT, Email, MaMonHoc)
-VALUES
-(N'Nguyễn Văn A', '1980-05-12', N'Nam', N'Hà Nội', '0901234567', 'vana@gv.com', 1),
-(N'Trần Thị B', '1985-08-20', N'Nữ', N'Hải Phòng', '0912345678', 'thib@gv.com', 2),
-(N'Lê Văn C', '1990-03-10', N'Nam', N'Đà Nẵng', '0923456789', 'vanc@gv.com', 3),
-(N'Phạm Thị D', '1992-11-25', N'Nữ', N'TP.HCM', '0934567890', 'thid@gv.com', 4);
-
--- Lớp
-INSERT INTO LOP (TenLop, SiSo, MaNamHoc, MaGVCN)
-VALUES
-(N'10A1', 40, 1, 1),
-(N'10A2', 38, 1, 2);
-
--- Học sinh
-INSERT INTO HOCSINH (HoTen, NgaySinh, GioiTinh, DiaChi, SDT, Email, MaLop, TrangThai)
-VALUES
-(N'Nguyễn Minh Khang', '2009-10-10', N'Nam', N'Hà Nội', '0981112222', 'khang@hs.com', 1, N'Đang học'),
-(N'Lê Thảo Vy', '2009-12-20', N'Nữ', N'Hà Nội', '0983334444', 'vy@hs.com', 1, N'Đang học'),
-(N'Phạm Tuấn Anh', '2009-07-15', N'Nam', N'Hải Phòng', '0985556666', 'tuananh@hs.com', 2, N'Đang học'),
-(N'Trần Bích Ngọc', '2009-03-05', N'Nữ', N'TP.HCM', '0987778888', 'ngoc@hs.com', 2, N'Đang học');
-
--- Phòng học
-INSERT INTO PHONGHOC (TenPhong, SucChua, ViTri)
-VALUES
-(N'P101', 50, N'Tầng 1'),
-(N'P102', 50, N'Tầng 1'),
-(N'P201', 60, N'Tầng 2');
-
--- Phân công giảng dạy
-INSERT INTO PHANCONG_GIANGDAY (MaGV, MaMonHoc, MaLop, MaHK)
-VALUES
-(1, 1, 1, 1), -- GV A dạy Toán lớp 10A1 HK1
-(2, 2, 1, 1), -- GV B dạy Văn lớp 10A1 HK1
-(3, 3, 2, 1), -- GV C dạy Anh lớp 10A2 HK1
-(4, 4, 2, 1); -- GV D dạy Tin lớp 10A2 HK1
-
--- Lịch học
-INSERT INTO LICHHOC (MaLop, MaMonHoc, MaGV, MaPhong, MaHK, ThuTrongTuan, TietHoc)
-VALUES
-(1, 1, 1, 1, 1, N'Thứ 2', 1),
-(1, 2, 2, 2, 1, N'Thứ 3', 2),
-(2, 3, 3, 3, 1, N'Thứ 4', 3),
-(2, 4, 4, 1, 1, N'Thứ 5', 4);
-
--- Điểm
-INSERT INTO DIEM (MaHS, MaMonHoc, MaHK, DiemMieng, Diem15p, Diem1Tiet, DiemThi)
-VALUES
-(1, 1, 1, 8, 7, 6, 7.5),
-(2, 1, 1, 9, 8, 8, 9),
-(3, 3, 1, 6, 7, 6.5, 7),
-(4, 4, 1, 10, 9, 9.5, 9);
-
--- Học phí
-INSERT INTO HOCPHI (MaHS, SoTien, NgayDong, TrangThai, MaHK)
-VALUES
-(1, 1500000, '2024-09-10', N'Đã đóng', 1),
-(2, 1500000, '2024-09-12', N'Đã đóng', 1),
-(3, 1500000, NULL, N'Chưa đóng', 1),
-(4, 1500000, '2024-09-15', N'Đã đóng', 1);
-
--- Tài khoản
-INSERT INTO TAIKHOAN (TenDangNhap, MatKhau, VaiTro, MaHS, MaGV)
-VALUES
-('admin01', 'admin01', 'Admin', NULL, NULL),
-('hs01', '123456', 'HocSinh', 1, NULL),
-('hs02', '123456', 'HocSinh', 2, NULL),
-('gv01', '123456', 'GiaoVien', NULL, 1),
-('gv02', '123456', 'GiaoVien', NULL, 2);
-
-
+CREATE TABLE DIEMDANH (
+    MaDiemDanh INT IDENTITY(1,1) PRIMARY KEY,
+    MaHS INT FOREIGN KEY REFERENCES HOCSINH(MaHS),
+    MaLop INT FOREIGN KEY REFERENCES LOP(MaLop),
+    NgayDiemDanh DATE NOT NULL,
+    TietHoc INT NOT NULL,
+    TrangThai NVARCHAR(50) NOT NULL, -- Ví dụ: 'Có mặt', 'Vắng có phép', 'Vắng không phép', 'Đi muộn'
+    GhiChu NVARCHAR(255) NULL
+);
+GO

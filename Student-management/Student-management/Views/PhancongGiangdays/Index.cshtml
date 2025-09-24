@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Student_management.Models.PhancongGiangday>
+@{
+    ViewData["Title"] = "Phân công Giảng dạy";
+}
+
+<div class="card shadow-sm">
+    <div class="card-header bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>@ViewData["Title"]</h5>
+            <a asp-action="Create" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle me-2"></i>Tạo Phân công mới</a>
+        </div>
+    </div>
+    <div class="card-body">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+
+        <form asp-action="Index" method="get" class="mb-4">
+            <div class="row align-items-end g-2">
+                <div class="col-md-5">
+                    <label class="form-label">Lọc theo Học kỳ</label>
+                    @if (ViewBag.HocKyList != null)
+                    {
+                        <select name="hocKyFilter" class="form-select" asp-items="@(ViewBag.HocKyList as SelectList)">
+                            <option value="">-- Tất cả --</option>
+                        </select>
+                    }
+                    else
+                    {
+                        <select class="form-select" disabled><option>Không có học kỳ</option></select>
+                    }
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Lọc theo Lớp</label>
+                    @if (ViewBag.LopList != null)
+                    {
+                        <select name="lopFilter" class="form-select" asp perspect@items="@(ViewBag.LopList as SelectList)">
+                            <option value="">-- Tất cả --</option>
+                        </select>
+                    }
+                    else
+                    {
+                        <select class="form-select" disabled><option>Không có lớp</option></select>
+                    }
+                </div>
+                <div class="col-md-2">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-filter me-2"></i>Lọc</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Lớp</th>
+                        <th>Môn học</th>
+                        <th>Giáo viên Phụ trách</th>
+                        <th>Học kỳ</th>
+                        <th class="text-center" style="width: 10%;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(item.MaLopNavigation?.TenLop ?? "N/A")</td>
+                            <td>@(item.MaMonHocNavigation?.TenMonHoc ?? "N/A")</td>
+                            <td>@(item.MaGvNavigation?.HoTen ?? "N/A")</td>
+                            <td>@(item.MaHkNavigation?.TenHk ?? "N/A")</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.MaPc" class="btn btn-sm btn-warning" title="Sửa"><i class="fas fa-edit"></i></a>
+                                <a asp-action="Delete" asp-route-id="@item.MaPc" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

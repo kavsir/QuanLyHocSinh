@@ -1,0 +1,95 @@
+﻿@model Student_management.Models.Hocky
+
+@{
+    ViewData["Title"] = "Chi tiết Học kỳ";
+}
+
+<h1 class="mb-4">@ViewData["Title"]: @Model.TenHk</h1>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header">
+        <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Thông tin chung</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tên Học kỳ</dt>
+            <dd class="col-sm-9">@Model.TenHk</dd>
+
+            <dt class="col-sm-3">Thuộc Năm học</dt>
+            <dd class="col-sm-9">@Model.MaNamHocNavigation?.TenNamHoc</dd>
+
+            <dt class="col-sm-3">Thời gian</dt>
+            <dd class="col-sm-9">@Model.NgayBatDau.ToString("dd/MM/yyyy") - @Model.NgayKetThuc.ToString("dd/MM/yyyy")</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-7">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Phân công Giảng dạy</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Lớp</th>
+                            <th>Môn học</th>
+                            <th>Giáo viên Phụ trách</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var pc in Model.PhancongGiangdays)
+                        {
+                            <tr>
+                                <td>@pc.MaLopNavigation?.TenLop</td>
+                                <td>@pc.MaMonHocNavigation?.TenMonHoc</td>
+                                <td>@pc.MaGvNavigation?.HoTen</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-wallet me-2"></i>Học phí</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0 small">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Học sinh</th>
+                            <th class="text-end">Số tiền</th>
+                            <th class="text-center">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var hp in Model.Hocphis)
+                        {
+                            <tr>
+                                <td>@hp.MaHsNavigation?.HoTen</td>
+                                <td class="text-end">@hp.SoTien?.ToString("N0")</td>
+                                <td class="text-center">
+                                     @if (hp.TrangThai == "Đã đóng") 
+                                     { <span class="badge bg-success">@hp.TrangThai</span> }
+                                     else 
+                                     { <span class="badge bg-danger">@hp.TrangThai</span> }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaHk" class="btn btn-warning"><i class="fas fa-edit me-2"></i>Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

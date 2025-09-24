@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Student_management.Models.Hocphi>
+@{
+    ViewData["Title"] = "Quản lý Học phí";
+}
+
+<div class="card shadow-sm">
+    <div class="card-header bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0"><i class="fas fa-file-invoice-dollar me-2"></i>@ViewData["Title"]</h5>
+            <a asp-action="Create" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle me-2"></i>Tạo Phiếu thu mới</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="mb-4 p-3 border rounded bg-light">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-4"><label class="form-label">Tìm theo Tên HS</label><input type="text" name="searchString" class="form-control" value="@ViewData["CurrentSearch"]" /></div>
+                <div class="col-md-3"><label class="form-label">Lọc theo Lớp</label><select name="lopFilter" class="form-select" asp-items="@(ViewBag.LopList as SelectList)"><option value="">-- Tất cả --</option></select></div>
+                <div class="col-md-3"><label class="form-label">Lọc theo Trạng thái</label><select name="statusFilter" class="form-select" asp-items="@(ViewBag.StatusList as SelectList)"><option value="">-- Tất cả --</option></select></div>
+                <div class="col-md-2"><div class="d-grid"><button type="submit" class="btn btn-primary"><i class="fas fa-filter me-2"></i>Lọc</button></div></div>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr><th>Học sinh</th><th>Lớp</th><th>Học kỳ</th><th class="text-end">Số tiền</th><th class="text-center">Ngày đóng</th><th class="text-center">Trạng thái</th><th class="text-center" style="width: 10%;">Hành động</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><strong>@item.MaHsNavigation?.HoTen</strong></td>
+                            <td>@item.MaHsNavigation?.MaLopNavigation?.TenLop</td>
+                            <td>@item.MaHkNavigation?.TenHk</td>
+                            <td class="text-end">@item.SoTien?.ToString("N0") VNĐ</td>
+                            <td class="text-center">@item.NgayDong?.ToString("dd/MM/yyyy")</td>
+                            <td class="text-center">
+                                @if (item.TrangThai == "Đã đóng")
+                                {
+                                    <span class="badge bg-success">@item.TrangThai</span>
+                                }
+                                else
+                                {
+
+                                    <span class="badge bg-danger">@item.TrangThai</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.MaHp" class="btn btn-sm btn-warning" title="Sửa"><i class="fas fa-edit"></i></a>
+                                <a asp-action="Delete" asp-route-id="@item.MaHp" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

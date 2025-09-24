@@ -1,0 +1,48 @@
+﻿@model Student_management.Models.Hocky
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Học kỳ";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaHk" />
+            <div class="form-group mb-3">
+                <label asp-for="MaNamHoc" class="control-label"></label>
+                <select asp-for="MaNamHoc" class="form-select" asp-items="ViewBag.MaNamHoc"></select>
+                <span asp-validation-for="MaNamHoc" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="TenHk" class="control-label"></label>
+                <input asp-for="TenHk" class="form-control" readonly />
+                <div class="form-text">Tên học kỳ đầy đủ không thể sửa trực tiếp. Thay đổi Năm học hoặc chọn lại tên gốc bên dưới.</div>
+            </div>
+            <div class="form-group mb-3">
+                <label class="control-label">Chọn lại Tên gốc (nếu cần)</label>
+                <select name="TenHk" class="form-select">
+                    <option value="@Model.TenHk">-- Giữ nguyên tên gốc --</option>
+                    <option value="Học kỳ 1">Học kỳ 1</option>
+                    <option value="Học kỳ 2">Học kỳ 2</option>
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="NgayBatDau" class="control-label"></label>
+                <input asp-for="NgayBatDau" class="form-control" type="date" />
+                <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="NgayKetThuc" class="control-label"></label>
+                <input asp-for="NgayKetThuc" class="form-control" type="date" />
+                <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@model Student_management.Models.Lop
+@{
+    ViewData["Title"] = "Tạo Lớp học mới";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mb-3">
+                        <label asp-for="TenLop" class="form-label"></label>
+                        <input asp-for="TenLop" class="form-control" />
+                        <span asp-validation-for="TenLop" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="MaNamHoc" class="form-label"></label>
+                        <select asp-for="MaNamHoc" class="form-select" asp-items="ViewBag.MaNamHoc"><option value="">-- Chọn năm học --</option></select>
+                        <span asp-validation-for="MaNamHoc" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="MaGvcn" class="form-label"></label>
+                        <select asp-for="MaGvcn" class="form-select" asp-items="ViewBag.MaGvcn"><option value="">-- Không có --</option></select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Tạo mới</button>
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

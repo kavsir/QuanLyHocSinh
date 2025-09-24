@@ -1,0 +1,50 @@
+﻿@model Student_management.Models.Namhoc
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Năm học";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h4>Năm học: @Model.TenNamHoc</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="MaNamHoc" />
+
+                    <div class="mb-3">
+                        <label asp-for="TenNamHoc" class="form-label"></label>
+                        <input asp-for="TenNamHoc" class="form-control" placeholder="Ví dụ: 2025 - 2026" />
+                        <span asp-validation-for="TenNamHoc" class="text-danger"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="NgayBatDau" class="form-label"></label>
+                            <input asp-for="NgayBatDau" class="form-control" type="date" />
+                            <span asp-validation-for="NgayBatDau" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="NgayKetThuc" class="form-label"></label>
+                            <input asp-for="NgayKetThuc" class="form-control" type="date" />
+                            <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,48 @@
+﻿@model Student_management.Models.Hocsinh
+
+@{
+    ViewData["Title"] = "Xác nhận Xóa Học sinh";
+}
+
+<h1 class="text-danger">@ViewData["Title"]</h1>
+
+<div class="alert alert-danger mt-3">
+    <h4 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>Cảnh báo Cực kỳ Quan trọng!</h4>
+    <p>Bạn có chắc chắn muốn xóa vĩnh viễn học sinh này không?</p>
+    <hr>
+    <p class="mb-0">
+        Hành động này <strong>KHÔNG THỂ HOÀN TÁC</strong> và sẽ xóa vĩnh viễn:
+        <ul>
+            <li>Toàn bộ thông tin cá nhân của học sinh <strong>@Model.HoTen</strong>.</li>
+            <li>Toàn bộ bảng điểm của học sinh này.</li>
+            <li>Toàn bộ lịch sử học phí.</li>
+            <li>Toàn bộ lịch sử điểm danh.</li>
+            @if (Model.Taikhoans.Any())
+            {
+                <li>Tài khoản đăng nhập liên kết (@Model.Taikhoans.First().TenDangNhap).</li>
+            }
+        </ul>
+    </p>
+</div>
+
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h5>Thông tin Học sinh sẽ bị xóa</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Họ và Tên</dt>
+            <dd class="col-sm-9">@Model.HoTen</dd>
+
+            <dt class="col-sm-3">Lớp</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.TenLop</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="MaHs" />
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt me-2"></i>Vâng, tôi hiểu và muốn Xóa</button>
+            <a asp-action="Index" class="btn btn-secondary">Hủy bỏ</a>
+        </form>
+    </div>
+</div>

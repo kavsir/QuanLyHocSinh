@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Sử dụng Layout chung
+}
+@model Student_management.Models.Taikhoan
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <section>
+            <form id="account" asp-action="Login" method="post">
+                <h2 class="text-center">Đăng nhập hệ thống</h2>
+                <hr />
+
+                @* Hiển thị các lỗi chung (ví dụ: "Sai mật khẩu") từ Controller *@
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="TenDangNhap" class="form-control" autocomplete="username" aria-required="true" placeholder="Tên đăng nhập" />
+                    <label asp-for="TenDangNhap">Tên đăng nhập</label>
+                    <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="MatKhau" type="password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Mật khẩu" />
+                    <label asp-for="MatKhau">Mật khẩu</label>
+                    <span asp-validation-for="MatKhau" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Đăng nhập</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@* Kích hoạt validation phía client để kiểm tra lỗi ngay trên trình duyệt *@
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

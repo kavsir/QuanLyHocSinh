@@ -1,0 +1,33 @@
+﻿@model Student_management.Models.Lichhoc
+@{
+    ViewData["Title"] = "Chi tiết Lịch học";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h4>Lịch học Tiết @Model.TietHoc, @Model.ThuTrongTuan</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaLop)</dt>
+            <dd class="col-sm-9">@Model.MaLopNavigation?.TenLop</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaMonHoc)</dt>
+            <dd class="col-sm-9">@Model.MaMonHocNavigation?.TenMonHoc</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaGv)</dt>
+            <dd class="col-sm-9">@Model.MaGvNavigation?.HoTen</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaPhong)</dt>
+            <dd class="col-sm-9">@Model.MaPhongNavigation?.TenPhong</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.MaHk)</dt>
+            <dd class="col-sm-9">@Model.MaHkNavigation?.TenHk</dd>
+        </dl>
+    </div>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaLichHoc" class="btn btn-primary">Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>

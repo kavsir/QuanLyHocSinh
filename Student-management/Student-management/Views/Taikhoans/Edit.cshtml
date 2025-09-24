@@ -1,0 +1,68 @@
+﻿@model Student_management.Models.ResetPasswordViewModel
+
+@{
+    ViewData["Title"] = "Đặt lại Mật khẩu";
+}
+
+<h1>@ViewData["Title"] cho tài khoản: @Model.TenDangNhap</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            @* Hiển thị tất cả các lỗi validation *@
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            @* Thêm các trường ẩn để gửi lại ID và Tên đăng nhập *@
+            <input type="hidden" asp-for="MaTk" />
+            <input type="hidden" asp-for="TenDangNhap" />
+
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h4>Thông tin Tài khoản</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-5"><label asp-for="TenDangNhap"></label></dt>
+                        <dd class="col-sm-7"><strong>@Model.TenDangNhap</strong></dd>
+
+                        <dt class="col-sm-5"><label asp-for="VaiTro"></label></dt>
+                        <dd class="col-sm-7">@Model.VaiTro</dd>
+
+                        <dt class="col-sm-5"><label asp-for="NguoiDungLienKet"></label></dt>
+                        <dd class="col-sm-7">@Model.NguoiDungLienKet</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mt-3">
+                <div class="card-header">
+                    <h4>Cập nhật Mật khẩu</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label asp-for="NewPassword" class="form-label"></label>
+                        <input asp-for="NewPassword" type="password" class="form-control" />
+                        <span asp-validation-for="NewPassword" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ConfirmPassword" class="form-label"></label>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

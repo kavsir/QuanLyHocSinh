@@ -1,0 +1,136 @@
+﻿@model Student_management.Models.Lop
+
+@{
+    ViewData["Title"] = "Chi tiết Lớp học";
+}
+
+<h1 class="mb-4">@ViewData["Title"]: @Model.TenLop</h1>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header">
+        <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Thông tin chung</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tên Lớp</dt>
+            <dd class="col-sm-9">@Model.TenLop</dd>
+
+            <dt class="col-sm-3">Sĩ Số</dt>
+            <dd class="col-sm-9">@Model.Hocsinhs.Count()</dd>
+
+            <dt class="col-sm-3">Năm Học</dt>
+            <dd class="col-sm-9">@Model.MaNamHocNavigation?.TenNamHoc</dd>
+
+            <dt class="col-sm-3">Giáo viên Chủ nhiệm</dt>
+            <dd class="col-sm-9">@Model.MaGvcnNavigation?.HoTen</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-users me-2"></i>Danh sách Học sinh</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và Tên</th>
+                            <th>Ngày Sinh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var (hs, index) in Model.Hocsinhs.Select((item, index) => (item, index)))
+                        {
+                            <tr>
+                                <td>@(index + 1)</td>
+                                <td>@hs.HoTen</td>
+                                <td>@hs.NgaySinh?.ToString("dd/MM/yyyy")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Phân công Giảng dạy</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Môn học</th>
+                            <th>Giáo viên Phụ trách</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var pc in Model.PhancongGiangdays)
+                        {
+                            <tr>
+                                <td>@pc.MaMonHocNavigation?.TenMonHoc</td>
+                                <td>@pc.MaGvNavigation?.HoTen</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header">
+        <h5 class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Thời khóa biểu</h5>
+    </div>
+    <div class="card-body table-responsive">
+        @{
+            var daysOfWeek = new List<string> { "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" };
+            var tietHocMax = Model.Lichhocs.Any() ? Model.Lichhocs.Max(l => l.TietHoc) ?? 5 : 5;
+            var scheduleLookup = Model.Lichhocs.ToLookup(l => l.ThuTrongTuan);
+        }
+        <table class="table table-bordered text-center small">
+            <thead class="table-light">
+                <tr>
+                    <th>Tiết</th>
+                    @foreach (var day in daysOfWeek)
+                    {
+                        <th>@day</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @for (int t = 1; t <= tietHocMax; t++)
+                {
+                    <tr>
+                        <td class="fw-bold">@t</td>
+                        @foreach (var day in daysOfWeek)
+                        {
+                            <td>
+                                @{
+                                    var lich = scheduleLookup[day].FirstOrDefault(l => l.TietHoc == t);
+                                }
+                                @if (lich != null)
+                                {
+                                    <div><strong>@lich.MaMonHocNavigation?.TenMonHoc</strong></div>
+                                    <div class="text-muted">@lich.MaGvNavigation?.HoTen</div>
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaLop" class="btn btn-warning"><i class="fas fa-edit me-2"></i>Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại Danh sách</a>
+</div>
